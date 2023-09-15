@@ -24,7 +24,7 @@ export default function Navbar(){
         </a>
         {/* ::Navbar */}
         <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:flex">
-          <a href="#link" className="mr-8 hover:text-indigo-500">Solutions</a>
+          <a href="#link" className="mr-8 hover:text-indigo-500">Home</a>
           <a href="#link" className="mr-8 hover:text-indigo-500">Prices</a>
           <a href="#link" className="mr-8 hover:text-indigo-500">About</a>
           <Link href="/contactus" className="mr-8 hover:text-indigo-500">Contact</Link>
