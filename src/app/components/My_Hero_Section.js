@@ -11,7 +11,7 @@ const My_Hero_Section = () => {
     let style2 = document.createElement("style")
     let after = document.getElementById("after-te1")
     let before = document.getElementById("before-te1")
-    const setKeyframesRules = (n=2, start = 0) => {
+    const setKeyframesRules = (n=20, start = 0) => {
       let steps = "";
       for (let i = start; i <= n; i++) {
         let percent = (i / n) * 100;
@@ -58,7 +58,7 @@ const My_Hero_Section = () => {
           </h1>
           <p className="mt-3 text-gray-100 font-firacode">
             Explore a world your aspirations become reality. At our freelancing platform,
-            we're committed to transforming your dreams into tangible deliverables. With our
+            we are committed to transforming your dreams into tangible deliverables. With our
             expert freelancers by your side, your vision is only a click away from a becoming a
             successful reality.
           </p>
