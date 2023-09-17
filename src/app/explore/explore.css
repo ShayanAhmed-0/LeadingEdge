@@ -1,0 +1,1091 @@
+/* CSS reset */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+/* Typography =======================*/
+
+/* Headings */
+
+/* Main heading for card's front cover */
+.card-front__heading {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+/* Main heading for inside page */
+.inside-page__heading {
+  padding-bottom: 1rem;
+  font-size: 76px;
+  width: 100%;
+  color: black;
+}
+
+/* Mixed */
+
+/* For both inside page's main heading and 'view me' text on card front cover */
+.inside-page__heading,
+.card-front__text-view {
+  font-size: 67px;
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+#h1_1{
+    font-size: 23px;
+    margin-top: -5px;
+}
+.inside-page__heading--city,
+.card-front__text-view--city {
+    color: black;
+    letter-spacing: 2px;
+    font-size:16px;
+    font-family: cursive;
+}
+
+#p11{
+    color: black;
+    letter-spacing: 2px;
+    font-size:30px;
+    font-family: cursive;
+
+}
+
+.inside-page__heading--ski,
+.card-front__text-view--ski {
+    color: black;
+    letter-spacing: 2px;
+    font-size:16px;
+    font-family: cursive;
+}
+
+.inside-page__heading--beach,
+.card-front__text-view--beach {
+    color: black;
+    letter-spacing: 2px;
+    font-size:26px;
+    font-family: cursive;
+}
+
+.inside-page__heading--camping,
+.card-front__text-view--camping {
+    color: black;
+    letter-spacing: 2px;
+    font-size:16px;
+    font-family: cursive;
+}
+
+/* Front cover */
+
+.card-front__tp {
+  color: #fafbfa;
+  
+}
+
+#p1_{
+    color: black;
+}
+#p11{
+    color: black;
+    font-size: 15px;
+}
+
+/* For pricing text on card front cover */
+.card-front__text-price {
+  font-size: 1.6rem;
+  margin-top: 0.2rem;
+}
+
+/* Back cover */
+
+/* For inside page's body text */
+.inside-page__text {
+  color: #121111;
+  font-size: 13px;
+  font-style: bolder;
+  margin-top: 10px;
+}
+
+/* Icons ===========================================*/
+
+.card-front__icon {
+  fill: #fafbfa;
+  font-size: 3vw;
+  height: 3.45rem;
+  margin-top: -0.5rem;
+  width: 3.45rem;
+}
+
+/* Buttons =================================================*/
+
+.inside-page__btn {
+  background-color: transparent;
+  border: 3px solid;
+  border-radius: 0.5rem;
+  font-size: 1.26rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  overflow: hidden;
+  padding: 0.7rem 0.75rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 90%;
+  z-index: 10;
+}
+
+.inside-page__btn::before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleY(0);
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.inside-page__btn--city {
+  border-color: black;
+  color: black;
+}
+
+.inside-page__btn--city::before {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.inside-page__btn--ski {
+    border-color: black;
+    color: black;
+}
+
+.inside-page__btn--ski::before {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.inside-page__btn--beach {
+    border-color: black;
+    color: black;
+}
+
+.inside-page__btn--beach::before {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.inside-page__btn--camping {
+    border-color: black;
+    color: black;
+}
+
+.inside-page__btn--camping::before {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.inside-page__btn:hover {
+  color: #fafbfa;
+}
+
+.inside-page__btn:hover::before {
+  transform: scaleY(1);
+}
+
+/* Layout Structure=========================================*/
+
+.main {
+  /* background: linear-gradient(to bottom right, #eee8dd, #e3d9c6); */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* height: 100vh; */
+  /* width: 100%; */
+}
+
+@media (min-width: 360px) and (max-width:707px) {
+    .card,
+    .card-front,
+    .card-back {
+      height: 23px;
+      width: 23px;
+    }
+    
+    .card:hover {
+      width: 23px;
+    }
+    
+    .flip-card {
+      height: 23px;
+      width: 23px;
+    }
+  }
+
+
+  
+/* Container to hold all cards in one place */
+/* .card-area {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 1rem;
+} */
+
+/* Card ============================================*/
+
+/* Area to hold an individual card */
+.card-section {
+  align-items: center;
+  display: flex;
+  height: 27%;
+  justify-content: center;
+  width: 100%;
+
+  background-image: url("https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.card-area{
+    color:black;
+    margin-top: 1240px;
+
+}
+
+/* A container to hold the flip card and the inside page */
+.card {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+  height: 33rem;
+  position: relative;
+  transition: all 1s ease;
+  width: 33rem;
+}
+
+/* Flip card - covering both the front and inside front page */
+
+/* An outer container to hold the flip card. This excludes the inside page */
+.flip-card {
+  height: 33rem;
+  perspective: 100rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  visibility: hidden;
+  width: 33rem;
+  z-index: 100;
+}
+
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+/* This is done so content in the inside page can be selected */
+.flip-card > * {
+  visibility: visible;
+}
+
+/* An inner container to hold the flip card. This excludes the inside page */
+.flip-card__container {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Styling for the front side of the flip card */
+
+/* container for the front side */
+.card-front {
+  background-color: #fafbfa; 
+  height: 33rem;
+  width: 33rem;
+}
+
+/* Front side's top section */
+.card-front__tp {
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+  display: flex;
+  flex-direction: column;
+  height: 27rem;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.card-front__tp--city {
+  background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.card-front__tp--ski {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.card-front__tp--beach {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+.card-front__tp--camping {
+    background: linear-gradient(to bottom, #988276, #8a645f);
+}
+
+/* Front card's bottom section */
+.card-front__bt {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top:10px;
+}
+
+/* Styling for the back side of the flip card */
+
+.card-back {
+  background-color: #fafbfa;
+  transform: rotateY(180deg);
+}
+
+/* Specifically targeting the <video> element */
+.video__container {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Inside page */
+
+.inside-page {
+  background-color: #fafbfa;
+  box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+  width: 15rem;
+  z-index: 2;
+}
+
+.inside-page__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  margin-top:37px;
+  margin-left: -60px;
+}
+
+/* Functionality ====================================*/
+
+/* This is to keep the card centered (within its container) when opened */
+.card:hover {
+  box-shadow: -0.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+  width: 30rem;
+}
+.card:hover{
+
+ cursor: pointer; 
+ margin-left: 250px;
+}
+
+/* When the card is hovered, the flip card container will rotate */
+.card:hover .flip-card__container {
+  transform: rotateY(-180deg);
+}
+
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+.card:hover .inside-page {
+  box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Footer ====================================*/
+
+.footer {
+  background-color: #333;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+.kaju{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Basic styles */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+.sp1{
+    font-size:30px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 10px;
+    font-weight: 700;
+    margin-top: 13px;
+}
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  color: #000;
+  background-color: var(--bg-color);
+  font-family: 'Maitree', serif;
+}
+
+h1{
+    font-size: 3.2em;
+    font-weight: normal;
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    background: linear-gradient(to bottom, #817168, #8f6661a8);
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+    font-weight: bolder;
+    
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1.2s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.6s;
+}
+
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 708px) {
+
+/* Basic styles */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+} 
+
+.sp1{
+    font-size: 3.6vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 10px;
+    font-weight: 900;
+   
+    
+}
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  color: #000;
+  background-color: var(--bg-color);
+  font-family: 'Maitree', serif;
+}
+
+h1{
+    font-size: 4.1em;
+    font-weight: normal;
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    background: linear-gradient(to bottom, #817168, #8f6661a8);
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+    font-weight: bolder;
+    
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1.2s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.6s;
+}
+
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+
+
+
+
+    
+  }
+
+
+
+
+  
+@media (min-width:110px) and (max-width: 408px) {
+
+    /* Basic styles */
+    
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    } 
+    
+    .sp1{
+        font-size: 4.3vw;
+        text-transform: uppercase;
+      
+        text-align: center;
+        line-height: 10px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        word-spacing: 1px;
+    }
+    
+  
+    
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* overflow: hidden; */
+      /* width: 100vw; */
+      /* height: 100vh; */
+      color: #000;
+      background-color: var(--bg-color);
+      font-family: 'Maitree', serif;
+    }
+    
+    h1{
+        font-size: 6.3em;
+        font-weight: normal;
+        
+    }
+    
+    /* title styles */
+    .home-title span{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        line-height: 1.2;
+    }
+    
+    .home-title span::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        /* background: white; */
+        background: linear-gradient(to bottom, #817168, #8f6661a8);
+        animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(-101%);
+        font-weight: bolder;
+        
+    }
+    
+    .home-title span::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(0);
+    }
+    
+    .home-title span:nth-of-type(1)::before,
+    .home-title span:nth-of-type(1)::after{
+        animation-delay: 1.2s;
+    }
+    
+    .home-title span:nth-of-type(2)::before,
+    .home-title span:nth-of-type(2)::after{
+        animation-delay: 1.6s;
+    }
+    
+    
+    @keyframes a-ltr-after{
+        0% {transform: translateX(-100%)}
+        100% {transform: translateX(101%)}
+    }
+    
+    @keyframes a-ltr-before{
+        0% {transform: translateX(0)}
+        100% {transform: translateX(200%)}
+    }
+    
+    
+    
+    
+    
+    
+        
+      }
+
+
+
+
+      @media (min-width:413px) {
+
+        /* Basic styles */
+        
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+        .sp1{
+            font-size: 3.2vw;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 10px;
+            font-weight: 900;
+            letter-spacing: 1.3px;
+            word-spacing: 1px;
+        }
+
+
+        :root{
+            --bg2-color:  white;;
+        }
+        
+      
+        
+        h1{
+            font-size: 6em;
+            font-weight: normal;
+        }
+        
+        /* title styles */
+        .home-title span{
+            position: relative;
+            overflow: hidden;
+            display: block;
+            line-height: 1.2;
+        }
+        
+        .home-title span::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(to bottom, #82746c, #887a7a) ;
+            animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+            transform: translateX(-101%);
+        }
+        
+        .home-title span::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg2-color);
+            animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+            transform: translateX(0);
+        }
+        
+        .home-title span:nth-of-type(1)::before,
+        .home-title span:nth-of-type(1)::after{
+            animation-delay: 1s;
+        }
+        
+        .home-title span:nth-of-type(2)::before,
+        .home-title span:nth-of-type(2)::after{
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes a-ltr-after{
+            0% {transform: translateX(-100%)}
+            100% {transform: translateX(101%)}
+        }
+        
+        @keyframes a-ltr-before{
+            0% {transform: translateX(0)}
+            100% {transform: translateX(200%)}
+        }
+    }
+
+
+
+
+
+    @media (min-width:697px) and (max-width:900px) {
+
+        /* Basic styles */
+        
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        } 
+        
+        .sp1{
+            font-size: 3.2vw;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 10px;
+            font-weight: 900;
+            letter-spacing: 1.3px;
+            word-spacing: 1px;
+        }
+        
+        :root{
+            --bg-color: white;
+            
+        }
+        
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          /* overflow: hidden; */
+          /* width: 100vw; */
+          /* height: 100vh; */
+          color: #000;
+          background-color: var(--bg-color);
+          font-family: 'Maitree', serif;
+
+        }
+        
+        h1{
+            font-size: 7.3em;
+            font-weight: normal;
+        }
+        
+        /* title styles */
+        .home-title span{
+            position: relative;
+            overflow: hidden;
+            display: block;
+            line-height: 1.2;
+        }
+        
+        .home-title span::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            /* background: white; */
+            background: linear-gradient(to bottom, #817168, #8f6661a8);
+            animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+            transform: translateX(-101%);
+            font-weight: bolder;
+            
+        }
+        
+        .home-title span::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+            animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+            transform: translateX(0);
+        }
+        
+        .home-title span:nth-of-type(1)::before,
+        .home-title span:nth-of-type(1)::after{
+            animation-delay: 1.2s;
+        }
+        
+        .home-title span:nth-of-type(2)::before,
+        .home-title span:nth-of-type(2)::after{
+            animation-delay: 1.6s;
+        }
+        
+        
+        @keyframes a-ltr-after{
+            0% {transform: translateX(-100%)}
+            100% {transform: translateX(101%)}
+        }
+        
+        @keyframes a-ltr-before{
+            0% {transform: translateX(0)}
+            100% {transform: translateX(200%)}
+        }
+
+    }
+        
+        
+.main_{
+    background-image: url("https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+} 
+
+
+/* .waju{
+    background-color: blue;
+} */
+
+
+
+
+
+
+@media (min-width: 369px) and (max-width:500px) {
+
+
+    .sp1{
+        font-size: 4.2vw;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 10px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        word-spacing: 1px;
+        margin-top: 30px;
+    }
+    .home-title{
+        height:70px;
+        padding-top: 35px;
+    }
+}
+
+
+@media (min-width: 501px) and (max-width:700px) {
+
+
+    .sp1{
+        font-size: 4.2vw;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 10px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        word-spacing: 1px;
+        margin-top: 30px;
+    }
+    .home-title{
+        height:70px;
+        padding-top: 26px;
+    }
+}
+
+
+
+@media (min-width: 700px) and (max-width:900px) {
+
+
+    .sp1{
+        font-size: 4.2vw;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 10px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        word-spacing: 1px;
+        margin-top: 30px;
+    }
+    .home-title{
+        height:70px;
+        padding-top: 16px;
+    }
+}
+
+
+@media (min-width: 901px) and (max-width:1210px) {
+
+
+    .sp1{
+        font-size: 4.5vw;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 10px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        word-spacing: 1px;
+        margin-top: 30px;
+    }
+    .home-title{
+        height:70px;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+@media (min-width: 1050px) and (max-width:1310px) {
+
+
+    .sp1{
+        font-size: 3.8vw;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 10px;
+        font-weight: 900;
+        letter-spacing: 1.3px;
+        word-spacing: 1px;
+        margin-top: 30px;
+    }
+    .home-title{
+        height:70px;
+        padding-top: 5px;
+    }
+}
+
+
+.home-title{
+    background-color: white;
+    border-top: 4px solid rgba(0, 0, 0, 0.619);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.639);
+    height: 200px;
+ padding-top: 14px;
+
+}
+
+
+
+     
