@@ -1,11 +1,18 @@
-import React from 'react'
+"use client"
 
-const page = () => {
+import Navbar from "../layout/navbar/Navbar";
+import Footer from "../layout/footer/Footer";
+import Explorecontent from "../components/explorecontent";
+
+export default function page() {
+   
   return (
-    <div>
-      explore
+    <div className="">
+      <Navbar/>
+   <Explorecontent/>
+   <div className="">
+   <Footer/>
+   </div>
     </div>
   )
 }
-
-export default page
