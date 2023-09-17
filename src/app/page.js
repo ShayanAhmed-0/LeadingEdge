@@ -12,11 +12,11 @@ export default function Home() {
   return (
    <>
    {/* <My_Hero_Section/> */}
-   <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3'> 
+   {/* <div className='grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3'> 
    <My_Anni_Cards/>
    <My_Anni_Cards/>
    <My_Anni_Cards/>
-   </div>
+   </div> */}
    </>
   )
 }
