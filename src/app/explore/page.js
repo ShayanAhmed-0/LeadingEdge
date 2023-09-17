@@ -1,18 +1,29 @@
-"use client"
+// import Navbar from "../layout/navbar/Navbar";
+// import Footer from "../layout/footer/Footer";
+// import Explorecontent from "../components/Explorecontent";
 
-import Navbar from "../layout/navbar/Navbar";
-import Footer from "../layout/footer/Footer";
-import Explorecontent from "../components/explorecontent";
-
-export default function page() {
+// export default function page() {
    
+//   return (
+//     <div className="">
+//       <Navbar/>
+//    <Explorecontent/>
+//    <div className="">
+//    <Footer/>
+//    </div>
+//     </div>
+//   )
+// }
+
+import React from 'react'
+
+const page = () => {
   return (
-    <div className="">
-      <Navbar/>
-   <Explorecontent/>
-   <div className="">
-   <Footer/>
-   </div>
+    <div>
+      explore
     </div>
   )
 }
+
+export default page
+
