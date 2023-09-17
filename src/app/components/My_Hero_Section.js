@@ -1,12 +1,45 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+// import React from "react";
+import React, { useEffect } from 'react'
+
 
 const My_Hero_Section = () => {
+
+  useEffect(() => {
+    let style1 = document.createElement("style")
+    let style2 = document.createElement("style")
+    let after = document.getElementById("after-te1")
+    let before = document.getElementById("before-te1")
+    const setKeyframesRules = (n=20, start = 0) => {
+      let steps = "";
+      for (let i = start; i <= n; i++) {
+        let percent = (i / n) * 100;
+        let random1 = `${Math.random()*150}px`;
+        let random2 = `${Math.random()*150}px`;
+        steps = steps.concat(`${percent}% { clip: rect(${random1}, 9999px, ${random2}, 0) } `)
+      }
+      return steps
+    }
+    let keyframes1 = `@keyframes glitch-anim-1 { ${setKeyframesRules(24)} }`
+    let keyframes2 = `@keyframes glitch-anim-2 { ${setKeyframesRules(32, 2)} }`
+    style1.innerHTML = keyframes1
+    style2.innerHTML = keyframes2
+    after.appendChild(style1)
+    before.appendChild(style2)
+    after.style.animation = "glitch-anim-1 2.5s infinite linear alternate-reverse"
+    before.style.animation = "glitch-anim-2 3s infinite linear alternate-reverse"
+  }, [])
+
+
+
+
+
   return (
     <div className="relative flex justify-end w-full h-full overflow-hidden bg-gradient-to-t from-black via-transparent to-black">
       {/* :HERO IMAGE */}
       <img
-        src="https://fancytailwind.com/static/f9e0992b36915d2ecac18949d7ba0fdf/24862/walking1.webp"
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFuaW1hdGVkJTIwY29kaW5nJTIwcGljdHVyZSUyMGluJTIwbGVmdCUyMGNvcm5lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
         alt=""
         className="absolute object-cover object-left w-full h-full sm:object-center opacity-70"
       />
@@ -16,30 +49,43 @@ const My_Hero_Section = () => {
         {/* ::Hero title & text */}
         <div className="p-8 mx-5 text-white bg-gray-800 bg-opacity-50 shadow-2xl md:mx-0 rounded-xl md:rounded-r-none">
           <h1 className="text-3xl font-extrabold sm:text-5xl font-josefin">
-            Formidable, <br />
+            Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
-              Fancy Hero 8
+              into Deliverables:
             </span>{" "}
-            est <br />
-            Formidable !
+              Your Work, <br />
+            Our Expertise
           </h1>
           <p className="mt-3 text-gray-100 font-firacode">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            blanditiis in asperiores optio est, id, temporibus perspiciatis
-            ratione ipsam quam tempore aliquam distinctio repudiandae iusto
-            facilis, consequatur eligendi illum quos.
+            Explore a world your aspirations become reality. At our freelancing platform,
+            we are committed to transforming your dreams into tangible deliverables. With our
+            expert freelancers by your side, your vision is only a click away from a becoming a
+            successful reality.
           </p>
         </div>
 
         {/* ::Hero button */}
-        <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
+        {/* <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
           <span className="relative -top-0.5 mr-2">Explore</span>
           <img
             src="https://static.thenounproject.com/png/4474576-200.png"
             alt=""
             className="absolute w-20 left-32"
           />
+        </button> */}
+
+        <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
+        <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #49FC00", clipPath: "rect(24px, 550px, 90px, 0)" }} >Explore</span>
+        Explore 
+        <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true">Explore</span>
+    
+          <img
+            src="https://static.thenounproject.com/png/4474576-200.png"
+            alt=""
+            className="absolute w-20 left-32"
+          />
         </button>
+
 
         {/* ::Social media */}
         <div className="absolute bottom-auto inline-flex items-center justify-around text-yellow-400 transform -translate-x-1/2 top-4 sm:top-auto sm:bottom-20 md:bottom-0 -right-16 md:right-0 h-36 md:flex-col">
