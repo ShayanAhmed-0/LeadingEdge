@@ -12,7 +12,9 @@ import PricingCard from './components/PricingCard'
 export default function Home() {
   return (
    <>
+   <div className='bg-stone-700'> 
    <My_Hero_Section/>
+   </div>
    </>
   )
 }

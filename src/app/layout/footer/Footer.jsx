@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="main_head">
-      <div className="relative mt-16 bg-stone-500">
+      <div className="relative mt-16 bg-stone-600">
         <svg
           className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
           preserveAspectRatio="none"
@@ -12,7 +12,7 @@ export default function Footer() {
             d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
           />
         </svg>
-        <div className="px-4 pt-12 mx-auto bg-stone-500 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className="px-4 pt-12 mx-auto bg-stone-600 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
             <div className="md:max-w-md lg:col-span-2">
               <a
@@ -53,14 +53,14 @@ export default function Footer() {
             </div>
             <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
               <div>
-                <p className="font-semibold tracking-wide text-teal-accent-400">
+                <p className="text-base font-bold tracking-wide text-teal-accent-400 ">
                   Category
                 </p>
                 <ul className="mt-2 space-y-2">
                   <li>
                     <a
                       href="/"
-                      className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                      className="transition-colors duration-300 font- text-deep-purple-50 hover:text-teal-accent-400"
                     >
                       News
                     </a>
