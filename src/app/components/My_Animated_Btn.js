@@ -32,8 +32,8 @@ const My_Animated_Btn = () => {
   return (
     <button
       id="button10"
-      className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded-full shadow-lg bg-gradient-to-tr from-yellow-50 to-black hover:from-black hover:to-yellow text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 hover:shadow-2xl active:top-0.5 hover:text-yellow-50">
-      Search
+      className="group relative px-5 py-2.5 flex justify-center  rounded-full shadow-lg bg-gradient-to-tr from-stone-600 to-stone-700 hover:from-black hover:to-yellow text-base text-white font-bold tracking-wide transition duration-500 transform hover:-translate-y-1 hover:shadow-2xl active:top-0.5 hover:text-yellow-50 border-4 border-opacity-40 border-black hover:border-white hover:border-4 hover:border-opacity-20 ">
+      Talk to Us 
     </button>
   );
 };

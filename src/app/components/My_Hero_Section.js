@@ -33,13 +33,11 @@ const My_Hero_Section = () => {
 
 
 
-
-
   return (
-    <div className="relative flex justify-end w-full h-full overflow-hidden bg-gradient-to-t from-black via-transparent to-black">
+    <div className="relative flex justify-end w-full h-full overflow-hidden bg-white bg-gradient-to-t from-black via-transparent to-black">
       {/* :HERO IMAGE */}
       <img
-        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFuaW1hdGVkJTIwY29kaW5nJTIwcGljdHVyZSUyMGluJTIwbGVmdCUyMGNvcm5lcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
         alt=""
         className="absolute object-cover object-left w-full h-full sm:object-center opacity-70"
       />
@@ -47,7 +45,7 @@ const My_Hero_Section = () => {
       {/* :HERO MAIN CONTAINER */}
       <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-40 md:w-2/3 lg:w-1/2">
         {/* ::Hero title & text */}
-        <div className="p-8 mx-5 text-white bg-gray-800 bg-opacity-50 shadow-2xl md:mx-0 rounded-xl md:rounded-r-none">
+        <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none">
           <h1 className="text-3xl font-extrabold sm:text-5xl font-josefin">
             Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
@@ -56,7 +54,7 @@ const My_Hero_Section = () => {
               Your Work, <br />
             Our Expertise
           </h1>
-          <p className="mt-3 text-gray-100 font-firacode">
+          <p className="font-medium tracking-wider text-gray-100 mt-14 font-firacode space-md">
             Explore a world your aspirations become reality. At our freelancing platform,
             we are committed to transforming your dreams into tangible deliverables. With our
             expert freelancers by your side, your vision is only a click away from a becoming a
@@ -75,14 +73,14 @@ const My_Hero_Section = () => {
         </button> */}
 
         <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
-        <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #49FC00", clipPath: "rect(24px, 550px, 90px, 0)" }} >Explore</span>
-        Explore 
-        <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true">Explore</span>
+        <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #49FC00", clipPath: "rect(24px, 550px, 90px, 0)" }} ></span>
+        <p className="mt-10 font-extrabold "> Explore </p>
+        <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true"></span>
     
           <img
-            src="https://static.thenounproject.com/png/4474576-200.png"
+            src="https://www.freeiconspng.com/thumbs/white-arrow-png/right-arrow-png-31.png"
             alt=""
-            className="absolute w-20 left-32"
+            className="absolute w-20 mt-11 left-32 "
           />
         </button>
 
@@ -136,7 +134,7 @@ const My_Hero_Section = () => {
         {/* ::Our Story */}
         <a
           href="#link"
-          className="relative w-40 py-5 font-semibold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-50 group rounded-t-xl font-firacode hover:pb-14"
+          className="relative w-40 py-5 font-bold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-80 group rounded-t-xl font-firacode hover:pb-14"
         >
           Our Story
           <svg
@@ -157,7 +155,7 @@ const My_Hero_Section = () => {
         {/* ::Our Shop */}
         <a
           href="#link"
-          className="relative w-40 py-5 font-semibold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-50 group rounded-t-xl font-firacode hover:pb-14"
+          className="relative w-40 py-5 font-bold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-80 group rounded-t-xl font-firacode hover:pb-14"
         >
           Our Shop
           <svg
@@ -178,7 +176,7 @@ const My_Hero_Section = () => {
         {/* ::Our Contact */}
         <Link
           href="/contactus"
-          className="relative w-40 py-5 font-semibold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-50 group rounded-t-xl font-firacode hover:pb-14"
+          className="relative w-40 py-5 font-bold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-80 group rounded-t-xl font-firacode hover:pb-14"
         >
           Our Contact
           <svg
