@@ -11,7 +11,7 @@ export default function Navbar(){
 
         <div className='flex justify-center'>
 
-    <header className="w-full mb-4 text-white rounded-lg shadow-xl lg:w-4/5 bg-stone-600 body-font">
+    <header className="w-full mb-4 text-white border-4 border-double rounded-lg shadow-xl lg:w-4/5 bg-stone-600 body-font border-black/40">
 
       {/* :DESKTOP MENU */}
       <div className="container flex items-center justify-between py-4 mx-auto px-7">
@@ -24,10 +24,10 @@ export default function Navbar(){
         </a>
         {/* ::Navbar */}
         <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:flex">
-          <a href="#link" className="mr-8 font-bold hover:text-black/70 font-lg">Home</a>
-          <a href="#link" className="mr-8 font-bold hover:text-black/70 font-lg" >Prices</a>
-          <a href="#link" className="mr-8 font-bold hover:text-black/70 font-lg">About</a>
-          <Link href="/contactus" className="mr-8 font-bold hover:text-black/70 font-lg">Contact</Link>
+          <a href="#link" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Home</a>
+          <a href="#link" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl " >Prices</a>
+          <a href="#link" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">About</a>
+          <Link href="/contactus" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Contact</Link>
         </nav>
         {/* ::Avatar */}
         <div className="hidden ml-auto mr-4 cursor-pointer sm:inline-flex md:ml-0 md:mr-0">

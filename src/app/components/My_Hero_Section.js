@@ -34,7 +34,7 @@ const My_Hero_Section = () => {
 
 
   return (
-    <div className="relative flex justify-end w-full h-full overflow-hidden bg-gradient-to-t from-black via-transparent to-black">
+    <div className="relative flex justify-end w-full h-full overflow-hidden bg-white bg-gradient-to-t from-black via-transparent to-black">
       {/* :HERO IMAGE */}
       <img
         src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
