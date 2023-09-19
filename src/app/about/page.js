@@ -1,4 +1,4 @@
-import Aboutcom from "../components/Aboutcom";
+import Aboutcom from "../../components/Aboutcom";
 
 function page() {
   return (
