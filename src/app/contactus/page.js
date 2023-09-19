@@ -1,8 +1,28 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 
 const page = () => {
+
+  const [name,setName]=useState('')
+  const [email,setEmail]=useState('')
+  const [phone,setPhone]=useState('')
+  const [message,setMessage]=useState('')
+
+const submitButton=async(e)=>{
+  e.preventDefault()
+   const res= await fetch("http://localhost:3000/api/contactus",{
+    method:"POST",
+    body:JSON.stringify({
+      name:name,
+      email:email,
+      phone:phone,
+    message:message
+  })
+   });
+   const result = await res.json();
+}
+
   return (
     <>
       <section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 px-20">
@@ -89,29 +109,82 @@ const page = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative p-8 rounded-lg shadow-xl bg-slate-200/70 sm:p-12">
                 <form>
-                  <ContactInputBox
+                  {/* <ContactInputBox
+                  getname={e=>setName(e.target.value)}
                     type="text"
-                    name="name"
+                    name={name}
                     placeholder="Your Name"
-                  />
-                  <ContactInputBox
+                  /> */}
+                  <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          onChange={e=>setName(e.target.value)}
+          className="bg-slate-200/90 w-full rounded-full border-4 border-black py-3 px-[14px] text-base text-body-color outline-none focus:border-white focus-visible:shadow-none placeholder:text-gray-500"
+        />
+        {/* bg-slate-200/90 */}
+      </div>
+
+
+                  {/* <ContactInputBox
+                  getname={e=>setEmail(e.target.value)}
                     type="text"
-                    name="email"
+                    name={email}
                     placeholder="Your Email"
-                  />
-                  <ContactInputBox
+                  /> */}
+ <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Your Email"
+          onChange={e=>setEmail(e.target.value)}
+          value={email}
+          className="bg-slate-200/90 w-full rounded-full border-4 border-black py-3 px-[14px] text-base text-body-color outline-none focus:border-white focus-visible:shadow-none placeholder:text-gray-500"
+        />
+        {/* bg-slate-200/90 */}
+      </div>
+
+
+                  {/* <ContactInputBox
+                  getname={e=>setPhone(e.target.value)}
                     type="text"
-                    name="phone"
+                    name={phone}
                     placeholder="Your Phone"
-                  />
-                  <ContactTextArea
+                  /> */}
+                   <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Your Phone"
+          value={phone}
+          onChange={e=>setPhone(e.target.value)}
+          className="bg-slate-200/90 w-full rounded-full border-4 border-black py-3 px-[14px] text-base text-body-color outline-none focus:border-white focus-visible:shadow-none placeholder:text-gray-500"
+        />
+        {/* bg-slate-200/90 */}
+      </div>
+
+
+                  {/* <ContactTextArea
+                  getname={e=>setMessage(e.target.value)}
+
                     row="6"
                     placeholder="Your Message"
-                    name="details"
+                    name={message}
                     defaultValue=""
-                  />
+                  /> */}
+
+<div className="mb-6">
+        <textarea
+        onChange={e=>setMessage(e.target.value)}
+          rows="6"
+          placeholder="Your Message"
+          value={message}
+          className="bg-slate-200/90 border-4 w-full resize-none rounded-full border-black py-3 text-base text-body-color outline-none focus:border-primary focus-visible:shadow-none placeholder:text-gray-500 placeholder:text-center text-center focus:border-white px-9"
+          defaultValue=""
+        />
+      </div>
+
                   <div>
-                    <button
+                    <button onClick={e=>submitButton(e)}
                       type="submit"
                       className="w-full p-3 text-white bg-blue-700 font-bold  transition border rounded-3xl border-primary bg-primary hover:bg-black">
                       Send Message
@@ -934,11 +1007,12 @@ const page = () => {
 
 export default page;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
+const ContactTextArea = ({getname, row, placeholder, name, defaultValue }) => {
   return (
     <>
       <div className="mb-6">
         <textarea
+        onChange={getname}
           rows={row}
           placeholder={placeholder}
           name={name}
