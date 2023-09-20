@@ -1,38 +1,31 @@
-"use client";
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState, useEffect } from "react";
-import ScrollReveal from "scrollreveal";
+
+// import { Dialog, Transition } from "@headlessui/react";
+// import { Fragment } from "react";
+
+// const revealConfig = {
+//   origin: "left",
+//   distance: "120px",
+//   duration: 1500,
+//   delay: 100,
+//   reset: true,
+// };
+// const revealConfig1 = {
+//   origin: "right",
+//   distance: "120px",
+//   duration: 1500,
+//   delay: 100,
+//   reset: true,
+// };
 
 function Aboutcom() {
-  let [isOpen, setIsOpen] = useState(false);
-  const revealConfig = {
-    origin: "left",
-    distance: "120px",
-    duration: 1500,
-    delay: 100,
-    reset: true, // Reset the animation when the element is not in the viewport
-  };
-  const revealConfig1 = {
-    origin: "right",
-    distance: "120px",
-    duration: 1500,
-    delay: 100,
-    reset: true, // Reset the animation when the element is not in the viewport
-  };
-  useEffect(() => {
-    ScrollReveal().reveal(".hello", revealConfig);
-  }, []);
-  useEffect(() => {
-    ScrollReveal().reveal(".hello1", revealConfig1);
-  }, []);
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
+  // const [isOpen, setIsOpen] = useState(false);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const scrollReveal = ScrollReveal();
+  //     scrollReveal.reveal(".hello", revealConfig);
+  //     scrollReveal.reveal(".hello1", revealConfig1);
+  //   }
+  // }, []);
   const stats = [
     {
       data: "35K",
@@ -51,6 +44,7 @@ function Aboutcom() {
       title: "Total revenue",
     },
   ];
+
   const team = [
     {
       avatar:
@@ -93,8 +87,17 @@ function Aboutcom() {
       github: "javascript:void(0)",
     },
   ];
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   return (
-    <div>
+    <div className="overflow-y-hidden ">
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
@@ -105,7 +108,7 @@ function Aboutcom() {
                 alt=""
               />
             </div>
-            <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
+            <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 ">
               <h3 className="text-red-600 font-semibold">About Us</h3>
               <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                 Our Services
@@ -118,7 +121,7 @@ function Aboutcom() {
                 natus error sit voluptatem accusantium doloremque laudantium
               </p>
               <a
-                onClick={openModal}
+                // onClick={openModal}
                 href="javascript:void(0)"
                 className="inline-flex gap-x-1 items-center text-red-600 hover:text-stone-600 duration-150 font-medium">
                 Learn more
@@ -134,8 +137,10 @@ function Aboutcom() {
                   />
                 </svg>
               </a>
-              <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10" onClose={closeModal}>
+              {/* <Transition appear show={isOpen} as={Fragment}>
+                <Dialog as="div" className="relative z-10"
+                //  onClose={closeModal}
+                >
                   <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -188,7 +193,8 @@ function Aboutcom() {
                             <button
                               type="button"
                               className="inline-flex justify-center shadow-xl rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-stone-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
-                              onClick={closeModal}>
+                              // onClick={closeModal}
+                              >
                               Got it, thanks!
                             </button>
                           </div>
@@ -197,7 +203,7 @@ function Aboutcom() {
                     </div>
                   </div>
                 </Dialog>
-              </Transition>
+              </Transition> */}
             </div>
           </div>
         </div>
@@ -231,9 +237,9 @@ function Aboutcom() {
         </div>
       </section>
       <hr className="w-4/5 mx-auto" />
-      <section className="py-14">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <div className="max-w-full">
+      <section className="py-14  overflow-y-hidden ">
+        <div className=" mx-auto px-4 md:px-8">
+          <div className="">
             <h3 className="text-center text-gray-800 text-3xl font-semibold sm:text-4xl">
               Meet our talent team
             </h3>
@@ -242,7 +248,7 @@ function Aboutcom() {
               industry.Lorem Ipsum has been the industries standard dummy.
             </p>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 ">
             <ul className="hello grid gap-8 lg:grid-cols-2">
               {team.map((item, idx) => (
                 <li key={idx} className="gap-8 sm:flex">
