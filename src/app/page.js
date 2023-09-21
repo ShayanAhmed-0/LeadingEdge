@@ -15,12 +15,9 @@ export default function Home() {
   return (
    <>
    <div className='bg-stone-700'> 
-   {/* <My_Hero_Section/> */}
+   <My_Hero_Section/>
    {/* <My_Contact_Form/> */}
 
-
-
-   <ContactusComp/>
    </div>
    </>
   )
