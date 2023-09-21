@@ -15,6 +15,7 @@
 //   )
 // }
 
+import Explorecontent from '@/components/Explorecontent'
 import React from 'react'
 
 const page = () => {

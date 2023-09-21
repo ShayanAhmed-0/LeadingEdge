@@ -24,9 +24,9 @@ export default function Navbar(){
         </a>
         {/* ::Navbar */}
         <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:flex">
-          <a href="#link" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Home</a>
-          <a href="#link" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl " >Prices</a>
-          <a href="#link" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">About</a>
+          <Link href="/" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Home</Link>
+          <Link href="/pricing" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl " >Prices</Link>
+          <Link href="/about" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">About</Link>
           <Link href="/contactus" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Contact</Link>
         </nav>
         {/* ::Avatar */}
@@ -47,10 +47,10 @@ export default function Navbar(){
       {/* ::MOBILE MENU */}
       { isOpen &&
         <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase bg-gray-200 rounded-lg md:hidden">
-          <a href="#link" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Solutions</a>
-          <a href="#link" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Prices</a>
-          <a href="#link" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">About</a>
-          <a href="#link" className="block px-3 py-2 font-bold text-black rounded-md font-lg hover:text-yellow-50 hover:bg-black/70">Contact</a>
+          <Link href="/" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Home</Link>
+          <Link href="/pricing" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Prices</Link>
+          <Link href="/about" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">About</Link>
+          <Link href="/contactus" className="block px-3 py-2 font-bold text-black rounded-md font-lg hover:text-yellow-50 hover:bg-black/70">Contact</Link>
         </div>
       }
     </header>

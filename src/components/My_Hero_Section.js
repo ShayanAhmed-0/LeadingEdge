@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 // import React from "react";
 import React, { useEffect } from 'react'
@@ -36,7 +37,7 @@ const My_Hero_Section = () => {
   return (
     <div className="relative flex justify-end w-full h-full overflow-hidden bg-white bg-gradient-to-t from-black via-transparent to-black">
       {/* :HERO IMAGE */}
-      <img
+      <Image
         src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
         alt=""
         className="absolute object-cover object-left w-full h-full sm:object-center opacity-70"
@@ -65,7 +66,7 @@ const My_Hero_Section = () => {
         {/* ::Hero button */}
         {/* <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
           <span className="relative -top-0.5 mr-2">Explore</span>
-          <img
+          <Image
             src="https://static.thenounproject.com/png/4474576-200.png"
             alt=""
             className="absolute w-20 left-32"
@@ -77,7 +78,7 @@ const My_Hero_Section = () => {
         <p className="mt-10 font-extrabold "> Explore </p>
         <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true"></span>
     
-          <img
+          <Image
             src="https://www.freeiconspng.com/thumbs/white-arrow-png/right-arrow-png-31.png"
             alt=""
             className="absolute w-20 mt-11 left-32 "

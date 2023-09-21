@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function My_Contact_Form() {
     return (
       <div className="main">
@@ -112,7 +113,8 @@ export default function My_Contact_Form() {
               target="_blank"
               class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12"
             >
-              <img
+              <Image
+              alt="img"
                 class="object-cover object-center w-full h-full rounded-full"
                 src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png"
               />
