@@ -102,15 +102,15 @@ function Aboutcom() {
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
             <div className="flex-1 sm:hidden lg:block">
-              <Image
+              <img
                 src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                 className="hello md:max-w-lg sm:rounded-lg"
                 alt=""
               />
             </div>
-            <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 ">
-              <h3 className="text-red-600 font-semibold">About Us</h3>
-              <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+            <div className="max-w-xl px-4 mt-6 space-y-3 sm:px-0 md:mt-0 ">
+              <h3 className="font-semibold text-red-600">About Us</h3>
+              <p className="text-3xl font-semibold text-gray-800 sm:text-4xl">
                 Our Services
               </p>
               <p className="mt-3 text-gray-600">
@@ -123,7 +123,7 @@ function Aboutcom() {
               <a
                 // onClick={openModal}
                 href="javascript:void(0)"
-                className="inline-flex gap-x-1 items-center text-red-600 hover:text-stone-600 duration-150 font-medium">
+                className="inline-flex items-center font-medium text-red-600 duration-150 gap-x-1 hover:text-stone-600">
                 Learn more
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,7 @@ function Aboutcom() {
                   </Transition.Child>
 
                   <div className="fixed inset-0 overflow-y-auto">
-                    <div className="flex min-h-full items-center justify-center p-4 text-center">
+                    <div className="flex items-center justify-center min-h-full p-4 text-center">
                       <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
@@ -162,10 +162,10 @@ function Aboutcom() {
                         leave="ease-in duration-200"
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95">
-                        <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-2xl transition-all">
+                        <Dialog.Panel className="w-full max-w-md p-6 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
                           <Dialog.Title
                             as="h3"
-                            className="font-semibold text-lg  leading-6 text-red-600">
+                            className="text-lg font-semibold leading-6 text-red-600">
                             Our Services
                           </Dialog.Title>
                           <div className="mt-2">
@@ -192,7 +192,7 @@ function Aboutcom() {
                           <div className="flex justify-center mt-4">
                             <button
                               type="button"
-                              className="inline-flex justify-center shadow-xl rounded-md border border-transparent bg-red-600 px-4 py-2 text-sm font-medium text-white hover:bg-stone-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
+                              className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md shadow-xl hover:bg-stone-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                               // onClick={closeModal}
                               >
                               Got it, thanks!
@@ -210,23 +210,23 @@ function Aboutcom() {
       </section>
       <hr className="w-4/5 mx-auto" />
       <section className="py-14">
-        <div className="max-w-screen-xl mx-auto px-4 text-gray-600 gap-x-12 justify-between md:px-8 lg:flex">
+        <div className="justify-between max-w-screen-xl px-4 mx-auto text-gray-600 gap-x-12 md:px-8 lg:flex">
           <div className="max-w-2xl mx-auto text-center lg:text-left lg:mx-0">
-            <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+            <h3 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
               We do our best to make customers always happy
             </h3>
-            <p className="mt-3 max-w-xl mx-auto lg:mx-0">
+            <p className="max-w-xl mx-auto mt-3 lg:mx-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               venenatis sollicitudin quam ut tincidunt.
             </p>
           </div>
           <div className="mt-12 lg:mt-0">
-            <ul className="hello1 flex flex-col items-start gap-x-12 justify-center divide-y sm:divide-y-0 sm:flex-row lg:grid lg:grid-cols-2">
+            <ul className="flex flex-col items-start justify-center divide-y hello1 gap-x-12 sm:divide-y-0 sm:flex-row lg:grid lg:grid-cols-2">
               {stats.map((item, idx) => (
                 <li
                   key={idx}
-                  className="text-center w-full px-4 py-6 sm:w-auto lg:py-4">
-                  <h4 className="text-4xl text-red-600 font-semibold">
+                  className="w-full px-4 py-6 text-center sm:w-auto lg:py-4">
+                  <h4 className="text-4xl font-semibold text-red-600">
                     {item.data}
                   </h4>
                   <p className="mt-3 font-medium">{item.title}</p>
@@ -237,35 +237,35 @@ function Aboutcom() {
         </div>
       </section>
       <hr className="w-4/5 mx-auto" />
-      <section className="py-14  overflow-y-hidden ">
-        <div className=" mx-auto px-4 md:px-8">
+      <section className="overflow-y-hidden py-14 ">
+        <div className="px-4 mx-auto md:px-8">
           <div className="">
-            <h3 className="text-center text-gray-800 text-3xl font-semibold sm:text-4xl">
+            <h3 className="text-3xl font-semibold text-center text-gray-800 sm:text-4xl">
               Meet our talent team
             </h3>
-            <p className=" text-center text-gray-600 mt-3">
+            <p className="mt-3 text-center text-gray-600 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.Lorem Ipsum has been the industries standard dummy.
             </p>
           </div>
           <div className="mt-12 ">
-            <ul className="hello grid gap-8 lg:grid-cols-2">
+            <ul className="grid gap-8 hello lg:grid-cols-2">
               {team.map((item, idx) => (
                 <li key={idx} className="gap-8 sm:flex">
                   <div className="w-full h-60">
-                    <Image
+                    <img
                       src={item.avatar}
-                      className="w-full h-full object-cover object-center shadow-md rounded-xl"
+                      className="object-cover object-center w-full h-full shadow-md rounded-xl"
                       alt=""
                     />
                   </div>
                   <div className="mt-4 sm:mt-0">
-                    <h4 className="text-lg text-gray-700 font-semibold">
+                    <h4 className="text-lg font-semibold text-gray-700">
                       {item.name}
                     </h4>
                     <p className="text-red-600">{item.title}</p>
-                    <p className="text-gray-600 mt-2">{item.desc}</p>
-                    <div className="mt-3 flex gap-4 text-gray-400">
+                    <p className="mt-2 text-gray-600">{item.desc}</p>
+                    <div className="flex gap-4 mt-3 text-gray-400">
                       <a href={item.twitter}>
                         <svg
                           className="w-5 h-5 duration-150 hover:text-gray-500"
