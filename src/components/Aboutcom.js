@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
-// import { Dialog, Transition } from "@headlessui/react";
-// import { Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { useState,Fragment, useEffect } from "react";
+// import ScrollReveal from "scrollreveal";
 
 // const revealConfig = {
 //   origin: "left",
@@ -18,7 +20,7 @@ import Image from "next/image";
 // };
 
 function Aboutcom() {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   // useEffect(() => {
   //   if (typeof window !== "undefined") {
   //     const scrollReveal = ScrollReveal();
@@ -97,7 +99,7 @@ function Aboutcom() {
   }
 
   return (
-    <div className="overflow-y-hidden ">
+    <div className="overflow-x-hidden overflow-y-hidden ">
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
@@ -121,7 +123,7 @@ function Aboutcom() {
                 natus error sit voluptatem accusantium doloremque laudantium
               </p>
               <a
-                // onClick={openModal}
+                onClick={openModal}
                 href="javascript:void(0)"
                 className="inline-flex items-center font-medium text-red-600 duration-150 gap-x-1 hover:text-stone-600">
                 Learn more
@@ -137,9 +139,9 @@ function Aboutcom() {
                   />
                 </svg>
               </a>
-              {/* <Transition appear show={isOpen} as={Fragment}>
+              <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-10"
-                //  onClose={closeModal}
+                 onClose={closeModal}
                 >
                   <Transition.Child
                     as={Fragment}
@@ -193,7 +195,7 @@ function Aboutcom() {
                             <button
                               type="button"
                               className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md shadow-xl hover:bg-stone-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
-                              // onClick={closeModal}
+                              onClick={closeModal}
                               >
                               Got it, thanks!
                             </button>
@@ -203,7 +205,7 @@ function Aboutcom() {
                     </div>
                   </div>
                 </Dialog>
-              </Transition> */}
+              </Transition>
             </div>
           </div>
         </div>
