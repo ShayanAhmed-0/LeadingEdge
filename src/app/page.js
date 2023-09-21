@@ -7,13 +7,32 @@ import My_FAQS from './components/My_FAQS'
 import Test from './components/test/Test'
 import My_Anni_Cards from './components/cards/anni_card'
 import PricingCard from './components/PricingCard'
+import Aboutcom from './aboutuscom'
+import Pricing from './components/PricingCard'
+import My_Service from './services/service'
+import My_Service1 from './services/service1'
+import BookFlip from './book/BookFlip'
 
 
 export default function Home() {
   return (
    <>
-   <div className='bg-stone-700'> 
-   <My_Hero_Section/>
+   <div className='bg-black'> 
+   {/* <My_Hero_Section/> */}
+    {/* <Pricing/> */}
+   {/* <Aboutcom/> */}
+   {/* <My_Service/> */}
+
+{/*  Main Services  */}
+
+    {/* <My_Service1/>  */}
+
+{/* 
+    <BookFlip/> */}
+
+
+    
+   
    </div>
    </>
   )
