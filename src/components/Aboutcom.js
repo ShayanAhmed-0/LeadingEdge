@@ -28,6 +28,35 @@ function Aboutcom() {
   //     scrollReveal.reveal(".hello1", revealConfig1);
   //   }
   // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("scrollreveal").then((module) => {
+        const ScrollReveal = module.default;
+        const scrollReveal = ScrollReveal();
+
+        // Configure your ScrollReveal animations
+        const revealConfig = {
+          origin: "left",
+          distance: "120px",
+          duration: 1500,
+          delay: 100,
+          reset: true,
+        };
+
+        const revealConfig1 = {
+          origin: "right",
+          distance: "120px",
+          duration: 1500,
+          delay: 100,
+          reset: true,
+        };
+
+        // Apply ScrollReveal to your elements
+        scrollReveal.reveal(".hello", revealConfig);
+        scrollReveal.reveal(".hello1", revealConfig1);
+      });
+    }
+  }, []);
   const stats = [
     {
       data: "35K",
