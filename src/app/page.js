@@ -1,4 +1,5 @@
 import ContactusComp from '@/components/ContactusComp'
+import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
 import Image from 'next/image'
 // import Navbar from './layout/navbar/Navbar'
@@ -20,8 +21,7 @@ export default function Home() {
 {/* <My_Service1/> */}
 
 
-
-   <ContactusComp/>
+   {/* <ContactusComp/> */}
    </div>
    </>
   )
