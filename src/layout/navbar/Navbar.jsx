@@ -14,7 +14,7 @@ export default function Navbar(){
     <header className="w-full mb-4 text-white border-4 border-double rounded-lg shadow-xl lg:w-4/5 bg-stone-600 body-font border-black/40">
 
       {/* :DESKTOP MENU */}
-      <div className="container flex items-center justify-between py-4 mx-auto px-7">
+      <div className="flex items-center justify-between py-4 mx-auto px-7">
         {/* ::Site logo and Name */}
         <a href="#link" className="flex items-center flex-shrink-0 font-medium text-gray-900 title-font md:mb-0">
           <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 p-2 text-white rounded-full from-stone-600 to-stone-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
