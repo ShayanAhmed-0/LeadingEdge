@@ -1,4 +1,5 @@
 import ContactusComp from '@/components/ContactusComp'
+import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
 import Image from 'next/image'
 // import My_Service1 from './services/service1'
@@ -22,6 +23,7 @@ export default function Home() {
 
 
    {/* <ContactusComp/> */}
+   <Messenger/>
    </div>
    </>
   )
