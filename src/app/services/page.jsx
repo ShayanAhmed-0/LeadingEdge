@@ -16,7 +16,7 @@ import './service1.css'
 import Image from 'next/image'
 import My_Btn from '@/ani_btn/btn'
 
-export default function My_Service1(){
+export default function page(){
 
     return(
 
