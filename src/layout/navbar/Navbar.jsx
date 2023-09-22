@@ -58,7 +58,7 @@ export default function Navbar(){
 
         <div className='flex justify-center'>
 
-    <header className="w-full mb-4 text-white border-none rounded-lg shadow-black/75 shadow-lg lg:w-4/5 bg-stone-600 body-font">
+    <header className="w-full mb-4 text-white border-none rounded-lg shadow-black/75 shadow-lg lg:w-4/5 bg-gradient-to-tr from-stone-900 to-stone-600 body-font">
 
       {/* :DESKTOP MENU */}
       <div className="container flex items-center justify-between py-4 mx-auto px-7">
