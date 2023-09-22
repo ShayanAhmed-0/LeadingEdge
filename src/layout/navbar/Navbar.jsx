@@ -72,16 +72,16 @@ export default function Navbar(){
         </a>
         {/* ::Navbar */}
         <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:flex">
-        <button id="bt1" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
+        <Link href="/" ><button id="bt1" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
 
-          <Link href="/" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Home</Link>    </button>
-          <button id="bt2" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
-          <Link href="/pricing" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl " >Prices</Link></button>
-          <button id="bt3" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
-          <Link href="/about" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">About</Link></button>
-          <button id="bt4" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
-          <Link href="/contactus" className="mr-8 font-bold hover:text-black/80 font-lg hover:text-xl">Contact</Link>
-          </button>
+          Home</button></Link>
+          <Link href="/pricing"><button id="bt2" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
+          Prices</button></Link>
+          <Link href="/about" ><button id="bt3" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
+          About</button></Link>
+          <Link href="/contactus"><button id="bt4" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
+          Contact
+          </button></Link>
         </nav>
         {/* ::Avatar */}
         <div className="hidden ml-auto mr-4 cursor-pointer sm:inline-flex md:ml-0 md:mr-0">
@@ -105,6 +105,9 @@ export default function Navbar(){
           <Link href="/pricing" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Prices</Link>
           <Link href="/about" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">About</Link>
           <Link href="/contactus" className="block px-3 py-2 font-bold text-black rounded-md font-lg hover:text-yellow-50 hover:bg-black/70">Contact</Link>
+          <div className="mt-1 flex justify-center w-full md:hidden sm:hidden lg:hidden">
+    <My_Animated_Btn/>
+  </div>
         </div>
       }
     </header>
