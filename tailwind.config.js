@@ -20,8 +20,18 @@ module.exports = {
       },
       animation: {
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
+        'jump': 'jump 0.5s linear',
       },
       keyframes: {
+        jump: {
+          '40%': { 
+            'transform': 'translateY(-4px)',
+            'text-shadow': '0 3px 1px rgba(0, 0, 0, .2)'
+          },
+          '100%': {
+            'transform': 'translateY(0px)'
+          }
+        },
         "text-reveal": {
           "0%": {
             transform: "translate(0, 100%)",

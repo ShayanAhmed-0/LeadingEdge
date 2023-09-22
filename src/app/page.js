@@ -1,6 +1,7 @@
 import ContactusComp from '@/components/ContactusComp'
 import My_Hero_Section from '@/components/My_Hero_Section'
 import Image from 'next/image'
+// import My_Service1 from './services/service1'
 // import Navbar from './layout/navbar/Navbar'
 // import Footer from './layout/footer/Footer'
 // import My_Contact_Form from '@/components/My_Contact_Form'
@@ -17,7 +18,7 @@ export default function Home() {
    <div className='bg-stone-700'> 
    <My_Hero_Section/>
    {/* <My_Contact_Form/> */}
-
+{/* <My_Service1/> */}
 
 
    {/* <ContactusComp/> */}
