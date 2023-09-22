@@ -111,10 +111,12 @@ const Explorecontent = () => {
               </div>
             </div>
           </section>
+  
+          <br/><br/><br/><br/><br/><br/><br/>
           <h1 class="home-title">
   <span className="sp1">Where Imagination Meets Innovation:</span>
   <span className="sp1">Transforming visions into excellence</span>
-</h1>
+</h1>         <br/><br/><br/><br/><br/><br/><br/>
           <section class="card-section">
             <div class="card">
               <div class="flip-card">
@@ -201,10 +203,11 @@ const Explorecontent = () => {
               </div>
             </div>
           </section>
+          <br/><br/><br/><br/><br/><br/><br/>
           <h1 class="home-title">
   <span className="sp1">Elevating Your Online Presence: </span>
   <span className="sp1">Masterpieces of Functionality</span>
-</h1>
+</h1>         <br/><br/><br/><br/><br/><br/><br/>
           <section class="card-section">
             <div class="card">
               <div class="flip-card">
@@ -274,10 +277,11 @@ const Explorecontent = () => {
               </div>
             </div>
           </section>
+          <br/><br/><br/><br/><br/><br/><br/>
           <h1 class="home-title">
   <span className="sp1">Your Dream, Our Canvas:</span>
   <span className="sp1">Your Brand&prime;s Success</span>
-</h1>
+</h1>         <br/><br/><br/><br/><br/><br/><br/>
           <section class="card-section">
             <div class="card">
               <div class="flip-card">
@@ -348,6 +352,7 @@ const Explorecontent = () => {
               </div>
             </div>
           </section>
+          <br/><br/><br/><br/><br/>
         </section>
       </main>      
     </div>
