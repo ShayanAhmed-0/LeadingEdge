@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 // import React from "react";
 import React, { useEffect } from 'react'
@@ -37,6 +38,8 @@ const My_Hero_Section = () => {
     <div className="relative flex justify-end w-full h-full overflow-hidden bg-white bg-gradient-to-t from-black via-transparent to-black">
       {/* :HERO IMAGE */}
       <img
+      // width={800}
+      // height={600}
         src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
         alt=""
         className="absolute object-cover object-left w-full h-full sm:object-center opacity-70"
@@ -65,7 +68,7 @@ const My_Hero_Section = () => {
         {/* ::Hero button */}
         {/* <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
           <span className="relative -top-0.5 mr-2">Explore</span>
-          <img
+          <Image
             src="https://static.thenounproject.com/png/4474576-200.png"
             alt=""
             className="absolute w-20 left-32"

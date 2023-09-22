@@ -1,18 +1,30 @@
-import MyVideo from "@/components/MyVideo";
-import My_Hero_Section from "@/components/My_Hero_Section";
-import BookFlip from "@/components/book/BookFlip";
-import My_Team from "@/team/team";
+import ContactusComp from '@/components/ContactusComp'
+import Messenger from '@/components/Messenger'
+import My_Hero_Section from '@/components/My_Hero_Section'
+import BookFlip from '@/components/book/BookFlip'
+import Image from 'next/image'
+// import Navbar from './layout/navbar/Navbar'
+// import Footer from './layout/footer/Footer'
+// import My_Contact_Form from '@/components/My_Contact_Form'
+// import My_Hero_Section from '../components/My_Hero_Section'
+// import My_FAQS from './components/My_FAQS'
+// import Test from './components/test/Test'
+// import My_Anni_Cards from './components/cards/anni_card'
+// import PricingCard from './components/PricingCard'
+
 
 export default function Home() {
   return (
-    <>
-    {/* <My_Hero_Section/> */}
-    <BookFlip />
-    {/* <My_Team /> */}
-    {/* <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-semibold mb-4">Welcome to My Website</h1>
-      <MyVideo/>
-    </div> */}
-    </>
-  );
+   <>
+   <div className='bg-stone-700'> 
+   {/* <My_Hero_Section/> */}
+   {/* <My_Contact_Form/> */}
+{/* <My_Service1/> */}
+
+{/* <Messenger/> */}
+   {/* <ContactusComp/> */}
+   <BookFlip />
+   </div>
+   </>
+  )
 }

@@ -66,23 +66,22 @@ const BookFlip = () => {
             />
           </div>
         </div>
-        <div className="page">
-        <div className="lg:flex lg:flex-col bg-black h-full">
+        <div className="page flex items-center">
+        <div className="lg:flex lg:flex-col bg-pink-600 bg-center h-full">
             <Image 
+              className='lg:pt-16 md:pt-14 sm:pt-12 tab:pt-8 ipad:pt-5 mobile:pt-10'
               src={logo}
               height={800}
               width={500}
             />
+            <div></div>
           </div>
         </div>
-        <div className="page">
-          <h1 className=''>
-            PAge3
-          </h1>
-          <div className='lg:text-xl md:text-lg mobile:text-xs'>
+        <div className="page flex items-center">
+          <div className='lg:text-xxl text-center md:text-lg sm:text-sm mobile:text-xs line-h-10'>
             <Typewriter
               options={{
-                strings: ['Four friends, driven by a shared passion for web development, embarked on a freelancing journey a year ago. Their humble beginnings were marked by sleepless nights and endless coding marathons, but their dedication knew no bounds. Over time, their skills evolved, and they transformed simple websites into captivating digital experiences. Word of their talent spread, clients multiplied, and success beckoned. With unwavering teamwork and a commitment to excellence, they conquered challenges, turning dreams into a thriving reality. Today, this company stands as a testament to friendship, perseverance, and the boundless possibilities of the digital world they have harnessed.'],
+                strings: ['Four friends, united by web development passion, turned dreams into a thriving reality in one year, showcasing the boundless possibilities of their craft.'],
                 autoStart: true,
                 loop: true,
               }}

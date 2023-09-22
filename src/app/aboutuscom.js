@@ -1,62 +1,38 @@
-"use client"
-import Image from "next/image";
+"use client";
 import { Dialog, Transition } from "@headlessui/react";
-import { useState,Fragment, useEffect } from "react";
-// import ScrollReveal from "scrollreveal";
-
-// const revealConfig = {
-//   origin: "left",
-//   distance: "120px",
-//   duration: 1500,
-//   delay: 100,
-//   reset: true,
-// };
-// const revealConfig1 = {
-//   origin: "right",
-//   distance: "120px",
-//   duration: 1500,
-//   delay: 100,
-//   reset: true,
-// };
+import { Fragment, useState, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 function Aboutcom() {
-  const [isOpen, setIsOpen] = useState(false);
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     const scrollReveal = ScrollReveal();
-  //     scrollReveal.reveal(".hello", revealConfig);
-  //     scrollReveal.reveal(".hello1", revealConfig1);
-  //   }
-  // }, []);
+  let [isOpen, setIsOpen] = useState(false);
+  const revealConfig = {
+    origin: "left",
+    distance: "120px",
+    duration: 1500,
+    delay: 100,
+    reset: true, // Reset the animation when the element is not in the viewport
+  };
+  const revealConfig1 = {
+    origin: "right",
+    distance: "120px",
+    duration: 1500,
+    delay: 100,
+    reset: true, // Reset the animation when the element is not in the viewport
+  };
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      import("scrollreveal").then((module) => {
-        const ScrollReveal = module.default;
-        const scrollReveal = ScrollReveal();
-
-        // Configure your ScrollReveal animations
-        const revealConfig = {
-          origin: "left",
-          distance: "120px",
-          duration: 1500,
-          delay: 100,
-          reset: true,
-        };
-
-        const revealConfig1 = {
-          origin: "right",
-          distance: "120px",
-          duration: 1500,
-          delay: 100,
-          reset: true,
-        };
-
-        // Apply ScrollReveal to your elements
-        scrollReveal.reveal(".hello", revealConfig);
-        scrollReveal.reveal(".hello1", revealConfig1);
-      });
-    }
+    ScrollReveal().reveal(".hello", revealConfig);
   }, []);
+  useEffect(() => {
+    ScrollReveal().reveal(".hello1", revealConfig1);
+  }, []);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
   const stats = [
     {
       data: "35K",
@@ -75,7 +51,6 @@ function Aboutcom() {
       title: "Total revenue",
     },
   ];
-
   const team = [
     {
       avatar:
@@ -118,17 +93,8 @@ function Aboutcom() {
       github: "javascript:void(0)",
     },
   ];
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
   return (
-    <div className="overflow-x-hidden overflow-y-hidden ">
+    <div>
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
@@ -139,7 +105,7 @@ function Aboutcom() {
                 alt=""
               />
             </div>
-            <div className="max-w-xl px-4 mt-6 space-y-3 sm:px-0 md:mt-0 ">
+            <div className="max-w-xl px-4 mt-6 space-y-3 sm:px-0 md:mt-0 lg:max-w-2xl">
               <h3 className="font-semibold text-red-600">About Us</h3>
               <p className="text-3xl font-semibold text-gray-800 sm:text-4xl">
                 Our Services
@@ -169,9 +135,7 @@ function Aboutcom() {
                 </svg>
               </a>
               <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-10"
-                 onClose={closeModal}
-                >
+                <Dialog as="div" className="relative z-10" onClose={closeModal}>
                   <Transition.Child
                     as={Fragment}
                     enter="ease-out duration-300"
@@ -224,8 +188,7 @@ function Aboutcom() {
                             <button
                               type="button"
                               className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-red-600 border border-transparent rounded-md shadow-xl hover:bg-stone-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
-                              onClick={closeModal}
-                              >
+                              onClick={closeModal}>
                               Got it, thanks!
                             </button>
                           </div>
@@ -268,9 +231,9 @@ function Aboutcom() {
         </div>
       </section>
       <hr className="w-4/5 mx-auto" />
-      <section className="overflow-y-hidden py-14 ">
-        <div className="px-4 mx-auto md:px-8">
-          <div className="">
+      <section className="py-14">
+        <div className="max-w-screen-xl px-4 mx-auto md:px-8">
+          <div className="max-w-full">
             <h3 className="text-3xl font-semibold text-center text-gray-800 sm:text-4xl">
               Meet our talent team
             </h3>
@@ -279,7 +242,7 @@ function Aboutcom() {
               industry.Lorem Ipsum has been the industries standard dummy.
             </p>
           </div>
-          <div className="mt-12 ">
+          <div className="mt-12">
             <ul className="grid gap-8 hello lg:grid-cols-2">
               {team.map((item, idx) => (
                 <li key={idx} className="gap-8 sm:flex">

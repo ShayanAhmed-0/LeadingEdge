@@ -1,7 +1,8 @@
 "use client"
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import "../explore/explore.css"
+import Image from "next/image";
+import "../app/explore/explore.css"
 const Explorecontent = () => {
     const revealConfig = {
         origin: "left",
