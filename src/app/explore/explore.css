@@ -8,7 +8,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 72%;
 }
 
 body {
@@ -265,7 +265,7 @@ body {
 
 .card-area{
     color:black;
-    margin-top: 1240px;
+    margin-top:90px;
 
 }
 
@@ -472,7 +472,7 @@ body {
 }
 
 
-
+/* 
 body {
   display: flex;
   align-items: center;
@@ -480,10 +480,10 @@ body {
   /* overflow: hidden; */
   /* width: 100vw; */
   /* height: 100vh; */
-  color: #000;
+  /* color: #000;
   background-color: var(--bg-color);
-  font-family: 'Maitree', serif;
-}
+  font-family: 'Maitree', serif; 
+} */
 
 h1{
     font-size: 3.2em;
@@ -575,17 +575,17 @@ h1{
 
 
 
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
   /* overflow: hidden; */
   /* width: 100vw; */
   /* height: 100vh; */
-  color: #000;
+  /* color: #000;
   background-color: var(--bg-color);
-  font-family: 'Maitree', serif;
-}
+  font-family: 'Maitree', serif; 
+} */
 
 h1{
     font-size: 4.1em;

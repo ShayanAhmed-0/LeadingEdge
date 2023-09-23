@@ -14,7 +14,7 @@ import pic12 from '/public/images_hexa/picl.png'
 
 import './service1.css'
 import Image from 'next/image'
-import My_Btn from '@/ani_btn/btn'
+import My_Btn from '@/components/ani_btn/btn'
 import Link from 'next/link'
 
 export default function page(){

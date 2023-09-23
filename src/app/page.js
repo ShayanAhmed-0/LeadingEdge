@@ -1,7 +1,10 @@
 import ContactusComp from '@/components/ContactusComp'
+import Explorecontent from '@/components/Explorecontent'
 import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
-import BookFlip from '@/components/book/BookFlip'
+import Footer from '@/layout/footer/Footer'
+import Navbar from '@/layout/navbar/Navbar'
+
 import Image from 'next/image'
 // import Navbar from './layout/navbar/Navbar'
 // import Footer from './layout/footer/Footer'
@@ -15,16 +18,20 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-   <>
+
    <div className='bg-stone-700'> 
-   {/* <My_Hero_Section/> */}
+   <Navbar/>
+   <My_Hero_Section/>
+   {/* <Explorecontent/> */}
+   <Footer/>
    {/* <My_Contact_Form/> */}
 {/* <My_Service1/> */}
 
-{/* <Messenger/> */}
+
+
    {/* <ContactusComp/> */}
-   <BookFlip />
+   {/* <BookFlip /> */}
    </div>
-   </>
+ 
   )
 }
