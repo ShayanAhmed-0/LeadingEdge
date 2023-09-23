@@ -13,7 +13,8 @@ export default function page() {
   return (
     <div className="">
       <Navbar/>
-   <Explorecontent/>
+      explore
+   {/* <Explorecontent/> */}
    <div className="">
    <Footer/>
    </div>
