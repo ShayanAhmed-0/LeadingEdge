@@ -75,7 +75,7 @@ const BookFlip = () => {
           </div>
         </div>
         <div className="flex items-center page">
-        <div className="h-full bg-pink-600 bg-center lg:flex lg:flex-col">
+        <div className="h-full bg-black bg-center lg:flex lg:flex-col">
             <Image 
               className='lg:pt-16 md:pt-14 sm:pt-12 tab:pt-8 ipad:pt-5 mobile:pt-10'
               src={logo}

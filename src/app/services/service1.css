@@ -26,11 +26,11 @@
 	font-family: var(--sinSerif);
 	font-size: 1rem;
 }  */
-body {
+/* body {
 	padding-right: calc(var(--size) * .5);
 	overflow-X: hidden;
 	hyphens: auto;
-} 
+}  */
  section {
   margin: calc(var(--size) * .5) auto 0;
   width: calc(var(--size) * calc(var(--Nhexa) - 1));
