@@ -68,7 +68,6 @@ export default function Navbar(){
           {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 p-2 text-white rounded-full from-stone-600 to-stone-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
           </svg> */}
-          <span className="ml-3 text-xl antialiased font-semibold text-yellow-50">LeadingEdge</span>
         </a>
         {/* ::Navbar */}
         <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:flex">
