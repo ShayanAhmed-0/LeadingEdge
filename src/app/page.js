@@ -1,6 +1,7 @@
 import ContactusComp from '@/components/ContactusComp'
 import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
+import BookFlip from '@/components/book/BookFlip'
 import Image from 'next/image'
 // import Navbar from './layout/navbar/Navbar'
 // import Footer from './layout/footer/Footer'
@@ -16,12 +17,13 @@ export default function Home() {
   return (
    <>
    <div className='bg-stone-700'> 
-   <My_Hero_Section/>
+   {/* <My_Hero_Section/> */}
    {/* <My_Contact_Form/> */}
 {/* <My_Service1/> */}
 
-<Messenger/>
+{/* <Messenger/> */}
    {/* <ContactusComp/> */}
+   <BookFlip />
    </div>
    </>
   )
