@@ -30,6 +30,7 @@ export default function Home() {
 
 
    {/* <ContactusComp/> */}
+   {/* <BookFlip /> */}
    </div>
  
   )

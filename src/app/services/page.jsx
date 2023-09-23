@@ -14,14 +14,17 @@ import pic12 from '/public/images_hexa/picl.png'
 
 import './service1.css'
 import Image from 'next/image'
-import My_Btn from '@/ani_btn/btn'
+import My_Btn from '@/components/ani_btn/btn'
+import Link from 'next/link'
 
-export default function My_Service1(){
+export default function page(){
 
     return(
 
 <div className='bod'>    
+<Link href="/">
 <My_Btn/>    
+</Link>
         <div className="main">	
 	
  <h1>  Unlock Your Digital Potential with Our Expertise</h1> 

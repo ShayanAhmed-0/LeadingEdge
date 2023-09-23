@@ -12,11 +12,12 @@ export default function page() {
    
   return (
     <div className="">
-      {/* <Navbar/>
-   <Explorecontent/>
+      <Navbar/>
+      explore
+   {/* <Explorecontent/> */}
    <div className="">
    <Footer/>
-   </div> */}
+   </div>
     </div>
   )
 }

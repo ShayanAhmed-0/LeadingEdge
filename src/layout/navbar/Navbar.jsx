@@ -61,7 +61,7 @@ export default function Navbar(){
     <header className="w-full mb-4 text-white border-none rounded-lg shadow-black/75 shadow-lg lg:w-4/5 bg-gradient-to-tr from-stone-900 to-stone-600 body-font">
 
       {/* :DESKTOP MENU */}
-      <div className="container flex items-center justify-between py-4 mx-auto px-7">
+      <div className="flex items-center justify-between py-4 mx-auto px-7">
         {/* ::Site logo and Name */}
         <a href="#link" className="flex items-center flex-shrink-0 font-medium text-gray-900 title-font md:mb-0">
 <Image src={logo} className='w-12 h-12 rounded-full'/>
