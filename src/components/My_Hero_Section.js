@@ -46,9 +46,9 @@ const My_Hero_Section = () => {
       />
 
       {/* :HERO MAIN CONTAINER */}
-      <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-40 md:w-2/3 lg:w-1/2">
+      <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-40 md:w-2/3 lg:w-2/3">
         {/* ::Hero title & text */}
-        <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none">
+        <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none lg">
           <h1 className="text-3xl font-extrabold sm:text-5xl font-josefin">
             Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
@@ -57,7 +57,7 @@ const My_Hero_Section = () => {
               Your Work, <br />
             Our Expertise
           </h1>
-          <p className="font-medium tracking-wider text-gray-100 mt-14 font-firacode space-md">
+          <p className="text-lg tracking-wider text-gray-100 mt-14 font-firacode space-md">
             Explore a world your aspirations become reality. At our freelancing platform,
             we are committed to transforming your dreams into tangible deliverables. With our
             expert freelancers by your side, your vision is only a click away from a becoming a
@@ -77,7 +77,7 @@ const My_Hero_Section = () => {
 <Link href="/explore">
         <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
         <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #49FC00", clipPath: "rect(24px, 550px, 90px, 0)" }} ></span>
-        <p className="mt-10 font-extrabold "> Explore </p>
+        <p className="mt-10 text-lg font-extrabold "> Explore </p>
         <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true"></span>
     
           <img

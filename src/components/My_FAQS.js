@@ -1,13 +1,14 @@
 export default function My_FAQS(){
 
     return(
-    
-    <section class="bg-gray-100 text-gray-800">
+    <div> 
+        <Navbar/>
+    <section class="bg-stone-600 text-gray-800">
         <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-            <h2 class="text-2xl font-semibold sm:text-4xl">Frequently Asked Questions</h2>
+            <h2 class="text-4xl font-bold sm:text-4xl">Frequently Asked Questions</h2>
             <p class="mt-4 mb-8 text-gray-600">Sagittis tempor donec id vestibulum viverra. Neque condimentum primis orci at lacus amet bibendum.</p>
             <div class="space-y-4">
-                <details class="w-full border rounded-lg">
+                <details class="w-full border-2 rounded-lg">
                     <summary class="px-4 py-6 focus:outline-none focus-visible:ri">Ex orci laoreet egestas sapien magna egestas scelerisque?</summary>
                     <p class="px-4 py-6 pt-0 ml-4 -mt-4 text-gray-600">Lectus iaculis orci metus vitae ligula dictum per. Nisl per nullam taciti at adipiscing est. </p>
                 </details>
@@ -22,7 +23,8 @@ export default function My_FAQS(){
             </div>
         </div>
     </section>
-        
+    <Footer/>
+    </div>
     )
     
     }

@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import './bookFlip.css'
 import React from 'react'
+import Navbar from '@/layout/navbar/Navbar';
+import Footer from '@/layout/footer/Footer';
 import { useEffect, useState } from 'react';
 import logo from '/public/Logo/Logos.png'
 import pic from '/public/Images/LEcover.jpg'
@@ -9,6 +11,7 @@ import pic2 from '/public/Images/EndingPg.jpg'
 import pic3 from '/public/Images/TitlePg.jpg'
 import Typewriter from 'typewriter-effect';
 import My_Team from '@/team/team';
+
 
 const BookFlip = () => {
   const [isTyping, setIsTyping] = useState(true);
@@ -54,11 +57,16 @@ const BookFlip = () => {
 
 
   return (
+<div> 
+  <Navbar/>
+  <br/>
+  <br/>
+  <br/>
 
     <div className="book">
       <div id="pages" className="pages">
         <div className="page">
-          <div className="lg:flex lg:flex-col bg-black h-full">
+          <div className="h-full bg-black lg:flex lg:flex-col">
             <Image
               src={pic}
               height={800}
@@ -66,8 +74,8 @@ const BookFlip = () => {
             />
           </div>
         </div>
-        <div className="page flex items-center">
-        <div className="lg:flex lg:flex-col bg-pink-600 bg-center h-full">
+        <div className="flex items-center page">
+        <div className="h-full bg-pink-600 bg-center lg:flex lg:flex-col">
             <Image 
               className='lg:pt-16 md:pt-14 sm:pt-12 tab:pt-8 ipad:pt-5 mobile:pt-10'
               src={logo}
@@ -77,8 +85,8 @@ const BookFlip = () => {
             <div></div>
           </div>
         </div>
-        <div className="page flex items-center">
-          <div className='lg:text-xxl text-center md:text-lg sm:text-sm mobile:text-xs line-h-10'>
+        <div className="flex items-center page">
+          <div className='text-center lg:text-xxl md:text-lg sm:text-sm mobile:text-xs line-h-10'>
             <Typewriter
               options={{
                 strings: ['Four friends, united by web development passion, turned dreams into a thriving reality in one year, showcasing the boundless possibilities of their craft.'],
@@ -89,7 +97,7 @@ const BookFlip = () => {
           </div>
         </div>
         <div className="page">
-        <div className="lg:flex lg:flex-col bg-black h-full">
+        <div className="h-full bg-black lg:flex lg:flex-col">
             <Image
               src={pic3}
               height={800}
@@ -101,7 +109,7 @@ const BookFlip = () => {
           <My_Team />
         </div>
         <div className="page">
-        <div className="lg:flex lg:flex-col bg-black h-full">
+        <div className="h-full bg-black lg:flex lg:flex-col">
             <Image
               src={pic2}
               height={800}
@@ -111,7 +119,12 @@ const BookFlip = () => {
         </div>
       </div>
     </div>
-
+    <br/>
+    <br/>
+    <br/>
+    
+    <Footer/>
+    </div>
   );
 }
 

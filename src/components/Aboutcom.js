@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import Navbar from "@/layout/navbar/Navbar";
+import Footer from "@/layout/footer/Footer";
 import { Dialog, Transition } from "@headlessui/react";
 import { useState,Fragment, useEffect } from "react";
 // import ScrollReveal from "scrollreveal";
@@ -128,6 +130,8 @@ function Aboutcom() {
   }
 
   return (
+    <div> 
+      <Navbar/>
     <div className="overflow-x-hidden overflow-y-hidden ">
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
@@ -361,6 +365,8 @@ function Aboutcom() {
           </div>
         </div>
       </section>
+    </div>
+<Footer/>
     </div>
   );
 }

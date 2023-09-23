@@ -106,11 +106,11 @@
   /* .book .page.flipped:nth-child(even):before { */
     /* background: white; */
   /* } */
-  *,
+  /* *,
   * :before,
   *:after {
     box-sizing: border-box;
-  }
+  } */
   .page:nth-child(odd){
     background-position: right top;
   }

@@ -1,6 +1,12 @@
 import Image from "next/image";
+import Navbar from "@/layout/navbar/Navbar";
+import Footer from "@/layout/footer/Footer";
+
+
 export default function My_Contact_Form() {
     return (
+      <div>
+        <Navbar/>
       <div className="main">
         <div class="flex justify-center mt-7 items-center w-screen h-screen bg-white">
           <div class="container mx-auto my-4 px-4 lg:px-20">
@@ -121,6 +127,9 @@ export default function My_Contact_Form() {
             </a>
           </div>
         </div>
+      </div>
+
+<Footer/>
       </div>
     );
   }

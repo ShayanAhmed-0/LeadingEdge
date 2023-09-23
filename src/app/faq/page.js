@@ -1,13 +1,17 @@
 import React from "react";
+import Navbar from "@/layout/navbar/Navbar";
+import Footer from "@/layout/footer/Footer";
 
 const page = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div> 
+      <Navbar/>
+    <div className="flex items-center justify-center min-h-screen">
       <section
-        style={{ background: "linear-gradient(to bottom, #988276, #8a645f);" }}
-        class="w-4/5 rounded-xl shadow-xl text-gray-800">
+        style={{ background: "linear-gradient(to bottom, #685b50, #685b50);" }}
+        class="w-4/5 rounded-xl shadow-xl text-black/90 ">
         <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <h2 class="text-2xl font-semibold sm:text-4xl">
+          <h2 class="text-2xl font-bold sm:text-4xl lg:text-3xl ">
             Frequently Asked Questions
           </h2>
           <p class="mt-4 mb-8 text-white text-center">
@@ -50,6 +54,8 @@ const page = () => {
           </div>
         </div>
       </section>
+    </div>
+<Footer/>
     </div>
   );
 };
