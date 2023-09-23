@@ -21,8 +21,8 @@ export default function Home() {
 
    <div className='bg-stone-700'> 
    <Navbar/>
-   {/* <My_Hero_Section/> */}
-   <Explorecontent/>
+   <My_Hero_Section/>
+   {/* <Explorecontent/> */}
    <Footer/>
    {/* <My_Contact_Form/> */}
 {/* <My_Service1/> */}
