@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import './BookFlip.css'
+import './bookFlip.css'
 import React from 'react'
 import { useEffect, useState } from 'react';
 import logo from '/public/Logo/Logos.png'
