@@ -36,11 +36,11 @@ export default function Footer() {
                   <rect x="14" y="1" width="7" height="6" />
                   <rect x="14" y="11" width="7" height="12" />
                 </svg>
-                <span className="ml-2 text-xl font-bold tracking-wide text-yellow-50 uppercase">
+                <span className="ml-2 text-xl font-bold tracking-wide uppercase text-yellow-50">
                  Software Company
                 </span>
               </a>
-              <div className="mt-4 max-w-sm sm:max-w-xl md:max-w-xl lg:max-w-xl">
+              <div className="max-w-sm mt-4 sm:max-w-xl md:max-w-xl lg:max-w-xl">
                 <p className="text-sm text-gray-100">
                 <strong>LeadingEdge</strong> specializes in innovative software solutions, driven by excellence and creativity. Our expert team tailors cutting-edge software to your unique needs, pushing digital boundaries.
                 </p>
@@ -224,7 +224,7 @@ export default function Footer() {
               </div>
             </div> */}
           </div>
-          <div className="mt-4 flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
+          <div className="flex flex-col justify-between pt-5 pb-10 mt-4 border-t border-deep-purple-accent-200 sm:flex-row">
             <p className="text-sm text-gray-300">
               © Copyright 2023 LeadingEdge Inc. All rights reserved.
             </p>
