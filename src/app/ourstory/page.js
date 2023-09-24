@@ -1,17 +1,7 @@
-'use client'
-import BookFlip from '@/components/book/BookFlip';
-import React from 'react'
-import { useEffect } from 'react';
-
+import BookFlip from "@/components/book/BookFlip";
+import React from "react";
 const page = () => {
-  
-    
-      
-      return (
-        
-      <BookFlip/>
-      
-      );
-}
+  return <BookFlip />;
+};
 
-export default page
+export default page;

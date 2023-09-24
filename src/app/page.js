@@ -1,5 +1,5 @@
 import ContactusComp from '@/components/ContactusComp'
-import Explorecontent from '@/components/Explorecontent'
+import Explorecontent from '@/components/explorecon/Explorecontent'
 import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
 import Footer from '@/layout/footer/Footer'

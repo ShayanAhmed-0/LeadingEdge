@@ -2,7 +2,7 @@
 // import Footer from "../layout/footer/Footer";
 // import Explorecontent from "../components/Explorecontent";
 
-import Explorecontent from "@/components/Explorecontent";
+import Explorecontent from "@/components/explorecon/Explorecontent";
 import Footer from "@/layout/footer/Footer";
 import Navbar from "@/layout/navbar/Navbar";
 

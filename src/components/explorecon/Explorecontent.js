@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import Image from "next/image";
-import "../app/explore/explore.css"
+import "./explore.css"
 const Explorecontent = () => {
     const revealConfig = {
         origin: "left",
