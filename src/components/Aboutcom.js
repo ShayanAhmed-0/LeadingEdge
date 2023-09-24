@@ -159,7 +159,7 @@ function Aboutcom() {
                 Our Services
               </p>
               <p className="mt-3 text-gray-700">
-              Welcome to Leading Edge Web Development Collective, our corner of the digital universe! We are a passionate collective of freelancers, united by our unwavering love for all things web development. Our journey began as a shared dream, one that envisioned a collaborative space where creativity knows no bounds and innovation thrives. As a diverse group of talented individuals, we've come together under the banner of Leading Edge to offer you a symphony of skills, each note harmonizing to craft unique, tailor-made solutions for your web-related needs.
+              Welcome to Leading Edge Web Development Collective, our corner of the digital universe! We are a passionate collective of freelancers, united by our unwavering love for all things web development. Our journey began as a shared dream, one that envisioned a collaborative space where creativity knows no bounds and innovation thrives. As a diverse group of talented individuals, we have come together under the banner of Leading Edge to offer you a symphony of skills, each note harmonizing to craft unique, tailor-made solutions for your web-related needs.
               </p>
               <a
                 onClick={openModal}
@@ -257,7 +257,7 @@ function Aboutcom() {
             Delighting Customers is Our Passion
             </h3>
             <p className="max-w-xl mx-auto mt-8 lg:mx-0">
-            At Leading Edge Web Development Collective, our unwavering commitment is to ensure that every interaction with us leaves our customers not just satisfied, but absolutely delighted. We thrive on going above and beyond, constantly pushing the boundaries of excellence to make your experience with us a truly exceptional one. Your happiness is our driving force, and we take immense pride in delivering web development solutions that not only meet your expectations but surpass them. Join us on a journey where satisfaction isn't enough – we're here to make you genuinely happy.
+            At Leading Edge Web Development Collective, our unwavering commitment is to ensure that every interaction with us leaves our customers not just satisfied, but absolutely delighted. We thrive on going above and beyond, constantly pushing the boundaries of excellence to make your experience with us a truly exceptional one. Your happiness is our driving force, and we take immense pride in delivering web development solutions that not only meet your expectations but surpass them. Join us on a journey where satisfaction is not enough – we are here to make you genuinely happy.
 
 
 
