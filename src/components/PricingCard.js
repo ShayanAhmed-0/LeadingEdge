@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "@/layout/navbar/Navbar";
+import Footer from "@/layout/footer/Footer";
 
 const Pricing = () => {
   return (
-   
+  <div> 
+    <Navbar/>
 <section
-  class="relative z-10 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
+  class="relative z-10 overflow-hidden bg-white pt-20 pb-12 lg:pt-[70px] lg:pb-[90px]"
 >
   <div class="container mx-auto">
     <div class="-mx-4 flex flex-wrap">
@@ -942,7 +945,8 @@ const Pricing = () => {
     </div>
   </div>
 </section>
-
+<Footer/>
+</div>
   );
 };
 

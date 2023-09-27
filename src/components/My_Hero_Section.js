@@ -30,7 +30,7 @@ const My_Hero_Section = () => {
     before.appendChild(style2)
     after.style.animation = "glitch-anim-1 2.5s infinite linear alternate-reverse"
     before.style.animation = "glitch-anim-2 3s infinite linear alternate-reverse"
-  }, [])
+  }, )
 
 
 
@@ -46,10 +46,10 @@ const My_Hero_Section = () => {
       />
 
       {/* :HERO MAIN CONTAINER */}
-      <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-40 md:w-2/3 lg:w-1/2">
+      <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-40 md:w-2/3 lg:w-2/3">
         {/* ::Hero title & text */}
-        <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none">
-          <h1 className="text-3xl font-extrabold sm:text-5xl font-josefin">
+        <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none lg">
+          <h1 className="text-xl font-extrabold font-josefin">
             Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
               into Deliverables:
@@ -57,7 +57,7 @@ const My_Hero_Section = () => {
               Your Work, <br />
             Our Expertise
           </h1>
-          <p className="font-medium tracking-wider text-gray-100 mt-14 font-firacode space-md">
+          <p className="text-lg tracking-wider text-gray-100 mt-14 font-firacode space-md">
             Explore a world your aspirations become reality. At our freelancing platform,
             we are committed to transforming your dreams into tangible deliverables. With our
             expert freelancers by your side, your vision is only a click away from a becoming a
@@ -74,10 +74,10 @@ const My_Hero_Section = () => {
             className="absolute w-20 left-32"
           />
         </button> */}
-
+<Link href="/explore">
         <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
         <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #49FC00", clipPath: "rect(24px, 550px, 90px, 0)" }} ></span>
-        <p className="mt-10 font-extrabold "> Explore </p>
+        <p className="mt-10 text-lg font-extrabold "> Explore </p>
         <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true"></span>
     
           <img
@@ -86,6 +86,7 @@ const My_Hero_Section = () => {
             className="absolute w-20 mt-11 left-32 "
           />
         </button>
+</Link>
 
 
         {/* ::Social media */}
@@ -135,8 +136,8 @@ const My_Hero_Section = () => {
       {/* :BOTTOM OPTIONS */}
       <div className="absolute bottom-0 flex items-end justify-around w-full transform -translate-x-1/2 left-1/2 md:w-2/3">
         {/* ::Our Story */}
-        <a
-          href="#link"
+        <Link
+          href="/ourstory"
           className="relative w-40 py-5 font-bold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-80 group rounded-t-xl font-firacode hover:pb-14"
         >
           Our Story
@@ -154,13 +155,13 @@ const My_Hero_Section = () => {
               d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
             />
           </svg>
-        </a>
+        </Link>
         {/* ::Our Shop */}
-        <a
-          href="#link"
+        <Link
+          href="/services"
           className="relative w-40 py-5 font-bold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-80 group rounded-t-xl font-firacode hover:pb-14"
         >
-          Our Shop
+          Services
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="absolute w-8 h-8 transition-all duration-300 ease-in transform -translate-x-1/2 translate-y-2 opacity-0 left-1/2 group-hover:opacity-100 group-hover:translate-y-0"
@@ -175,13 +176,13 @@ const My_Hero_Section = () => {
               d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
             />
           </svg>
-        </a>
+        </Link>
         {/* ::Our Contact */}
         <Link
-          href="/contactus"
+          href="/faq"
           className="relative w-40 py-5 font-bold text-center text-gray-600 transition-all duration-300 transform bg-white bg-opacity-80 group rounded-t-xl font-firacode hover:pb-14"
         >
-          Our Contact
+          FAQs
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="absolute w-8 h-8 transition-all duration-300 ease-in transform -translate-x-1/2 translate-y-2 opacity-0 left-1/2 group-hover:opacity-100 group-hover:translate-y-0"

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  /* background-color: rgb(165, 162, 157); */
+/* body{
+  /* background-color: rgb(165, 162, 157); 
    
   background-color: white;
-}
+} */
 @layer utilities {
   .backface-hidden {
     backface-visibility: hidden;

@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import Navbar from "@/layout/navbar/Navbar";
+import Footer from "@/layout/footer/Footer";
 import { Dialog, Transition } from "@headlessui/react";
 import { useState,Fragment, useEffect } from "react";
 // import ScrollReveal from "scrollreveal";
@@ -59,30 +61,30 @@ function Aboutcom() {
   }, []);
   const stats = [
     {
-      data: "35K",
+      data: "2K+",
       title: "Customers",
     },
     {
-      data: "10K+",
-      title: "Downloads",
+      data: "280",
+      title: "Projects Delivered",
     },
     {
-      data: "40+",
+      data: "20+",
       title: "Countries",
     },
     {
-      data: "30M+",
-      title: "Total revenue",
+      data: "20+",
+      title: "Team Members",
     },
   ];
 
   const team = [
     {
       avatar:
-        "https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
-      name: "Martiana dialan",
-      title: "Product designer",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
+        "https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+      name: "Shayan Ahmed",
+      title: "Mern Stack Developer",
+      desc: "Meet the backbone of our web development prowess: Shayan Ahmed, our Senior Web Developer, turning ideas into digital excellence",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -90,9 +92,9 @@ function Aboutcom() {
     {
       avatar:
         "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
-      name: "Micheal colorand",
+      name: "M. Haris Nadeem",
       title: "Software engineer",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
+      desc: "Introducing Haris Nadeem, our Software Engineer extraordinaire, crafting innovation one line of code at a time",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -100,9 +102,9 @@ function Aboutcom() {
     {
       avatar:
         "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      name: "Daniel martin",
-      title: "Product designer",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
+      name: "Bilal Hashmi",
+      title: "Frontend designer",
+      desc: "Meet Bilal Hashmi, our Front-End Developer, shaping stunning user experiences, pixel by pixel.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -110,9 +112,19 @@ function Aboutcom() {
     {
       avatar:
         "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-      name: "Vicky tanson",
-      title: "Product manager",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
+      name: "Wajid Ahmed",
+      title: "Backend Developer",
+      desc: "Say hello to Wajid Ahmed, our Backend Developer, architecting the digital backbone of excellence",
+      linkedin: "javascript:void(0)",
+      twitter: "javascript:void(0)",
+      github: "javascript:void(0)",
+    },
+    {
+      avatar:
+        "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+      name: "Azlan",
+      title: "Marketing Manager",
+      desc: "Meet Azlan, our Marketing Maestro, shaping our digital presence and amplifying our reach",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -128,33 +140,31 @@ function Aboutcom() {
   }
 
   return (
+    <div> 
+      <Navbar/>
     <div className="overflow-x-hidden overflow-y-hidden ">
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
           <div className="items-center gap-x-12 sm:px-4 md:px-0 lg:flex">
             <div className="flex-1 sm:hidden lg:block">
               <img
-                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1784&q=80"
                 className="hello md:max-w-lg sm:rounded-lg"
                 alt=""
               />
             </div>
             <div className="max-w-xl px-4 mt-6 space-y-3 sm:px-0 md:mt-0 ">
-              <h3 className="font-semibold text-red-600">About Us</h3>
+              <h3 className="font-semibold text-red-600 text-xxl">About Us</h3>
               <p className="text-3xl font-semibold text-gray-800 sm:text-4xl">
                 Our Services
               </p>
-              <p className="mt-3 text-gray-600">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum, sed ut perspiciatis unde omnis iste
-                natus error sit voluptatem accusantium doloremque laudantium
+              <p className="mt-3 text-gray-700">
+              Welcome to Leading Edge Web Development Collective, our corner of the digital universe! We are a passionate collective of freelancers, united by our unwavering love for all things web development. Our journey began as a shared dream, one that envisioned a collaborative space where creativity knows no bounds and innovation thrives. As a diverse group of talented individuals, we have come together under the banner of Leading Edge to offer you a symphony of skills, each note harmonizing to craft unique, tailor-made solutions for your web-related needs.
               </p>
               <a
                 onClick={openModal}
                 href="javascript:void(0)"
-                className="inline-flex items-center font-medium text-red-600 duration-150 gap-x-1 hover:text-stone-600">
+                className="inline-flex items-center font-bold text-red-600 duration-150 gap-x-1 hover:text-stone-600">
                 Learn more
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -243,12 +253,17 @@ function Aboutcom() {
       <section className="py-14">
         <div className="justify-between max-w-screen-xl px-4 mx-auto text-gray-600 gap-x-12 md:px-8 lg:flex">
           <div className="max-w-2xl mx-auto text-center lg:text-left lg:mx-0">
-            <h3 className="text-3xl font-semibold text-gray-800 sm:text-4xl">
-              We do our best to make customers always happy
+            <h3 className="text-xl font-semibold text-gray-800 sm:text-4xl">
+            Delighting Customers is Our Passion
             </h3>
-            <p className="max-w-xl mx-auto mt-3 lg:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              venenatis sollicitudin quam ut tincidunt.
+            <p className="max-w-xl mx-auto mt-8 lg:mx-0">
+            At Leading Edge Web Development Collective, our unwavering commitment is to ensure that every interaction with us leaves our customers not just satisfied, but absolutely delighted. We thrive on going above and beyond, constantly pushing the boundaries of excellence to make your experience with us a truly exceptional one. Your happiness is our driving force, and we take immense pride in delivering web development solutions that not only meet your expectations but surpass them. Join us on a journey where satisfaction is not enough – we are here to make you genuinely happy.
+
+
+
+
+
+
             </p>
           </div>
           <div className="mt-12 lg:mt-0">
@@ -257,7 +272,7 @@ function Aboutcom() {
                 <li
                   key={idx}
                   className="w-full px-4 py-6 text-center sm:w-auto lg:py-4">
-                  <h4 className="text-4xl font-semibold text-red-600">
+                  <h4 className="font-semibold text-red-600 text-xxl">
                     {item.data}
                   </h4>
                   <p className="mt-3 font-medium">{item.title}</p>
@@ -271,15 +286,14 @@ function Aboutcom() {
       <section className="overflow-y-hidden py-14 ">
         <div className="px-4 mx-auto md:px-8">
           <div className="">
-            <h3 className="text-3xl font-semibold text-center text-gray-800 sm:text-4xl">
+            <h3 className="text-xl font-semibold text-center text-gray-900 sm:text-4xl">
               Meet our talent team
             </h3>
-            <p className="mt-3 text-center text-gray-600 ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum has been the industries standard dummy.
+            <p className="mt-8 text-center text-gray-600 ">
+            Discover our remarkable web development squad, a fusion of creativity and unwavering commitment:
             </p>
           </div>
-          <div className="mt-12 ">
+          <div className="mt-24 ">
             <ul className="grid gap-8 hello lg:grid-cols-2">
               {team.map((item, idx) => (
                 <li key={idx} className="gap-8 sm:flex">
@@ -361,6 +375,8 @@ function Aboutcom() {
           </div>
         </div>
       </section>
+    </div>
+<Footer/>
     </div>
   );
 }

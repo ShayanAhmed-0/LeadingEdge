@@ -1,5 +1,5 @@
 import ContactusComp from '@/components/ContactusComp'
-import Explorecontent from '@/components/Explorecontent'
+import Explorecontent from '@/components/explorecon/Explorecontent'
 import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
 import Footer from '@/layout/footer/Footer'
@@ -19,7 +19,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
 
-   <div className='bg-stone-700'> 
+   <div className='bg-white'> 
    <Navbar/>
    <My_Hero_Section/>
    {/* <Explorecontent/> */}
@@ -30,6 +30,7 @@ export default function Home() {
 
 
    {/* <ContactusComp/> */}
+   {/* <BookFlip /> */}
    </div>
  
   )
