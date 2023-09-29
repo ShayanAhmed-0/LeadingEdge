@@ -5,8 +5,11 @@ import Link from "next/link";
 import React, { useEffect } from 'react'
 
 
+
+
 const My_Hero_Section = () => {
 
+  
   useEffect(() => {
     let style1 = document.createElement("style")
     let style2 = document.createElement("style")
@@ -30,7 +33,7 @@ const My_Hero_Section = () => {
     before.appendChild(style2)
     after.style.animation = "glitch-anim-1 2.5s infinite linear alternate-reverse"
     before.style.animation = "glitch-anim-2 3s infinite linear alternate-reverse"
-  }, )
+  }, [])
 
 
 
@@ -42,7 +45,7 @@ const My_Hero_Section = () => {
       // height={600}
         src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
         alt=""
-        className="absolute object-cover object-left w-full h-full sm:object-center opacity-70"
+        className="absolute object-cover object-left w-full h-full sm:object-center opacity-30"
       />
 
       {/* :HERO MAIN CONTAINER */}
@@ -82,7 +85,7 @@ const My_Hero_Section = () => {
     
           <img
             src="https://www.freeiconspng.com/thumbs/white-arrow-png/right-arrow-png-31.png"
-            alt=""
+            alt="true"
             className="absolute w-20 mt-11 left-32 "
           />
         </button>

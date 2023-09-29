@@ -1,3 +1,4 @@
+"use client"
 import ContactusComp from '@/components/ContactusComp'
 import Explorecontent from '@/components/explorecon/Explorecontent'
 import Messenger from '@/components/Messenger'
@@ -15,8 +16,9 @@ import Image from 'next/image'
 // import My_Anni_Cards from './components/cards/anni_card'
 // import PricingCard from './components/PricingCard'
 
-
 export default function Home() {
+  
+
   return (
 
    <div className='bg-white'> 
