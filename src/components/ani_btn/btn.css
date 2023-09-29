@@ -1,21 +1,21 @@
-button:hover{cursor: pointer}
-    button {
+zulfi:hover{cursor: pointer}
+    zulfi {
       background: transparent; outline: none;
       position: relative;
-       border: 3px solid #111; 
+       /* border: 3px solid #111;  */
       padding: 10px;
       width: 25%;
       overflow: hidden;
-      background-color: rgba(0, 0, 0, 0.769);
+      /* background-color: rgb(36, 36, 36); */
       color:white;
     }
     .var{margin-top: 20px;
         margin-left: 10px;
     }
 
-    /*button:before (attr data-hover)*/
-    button:hover:before{opacity: 1; transform: translate(0,0);}
-    button:before{
+    /*zulfi:before (attr data-hover)*/
+    zulfi:hover:before{opacity: 1; transform: translate(0,0);}
+    zulfi:before{
       content: attr(data-hover);
       position: absolute;
       top: 1.1em; left: 0;
@@ -28,9 +28,9 @@ button:hover{cursor: pointer}
       transform: translate(-100%,0);
       transition: all .3s ease-in-out;
     }
-      /*button div (button text before hover)*/
-      button:hover div{opacity: 0; transform: translate(100%,0)}
-      button div{
+      /*zulfi div (zulfi text before hover)*/
+      zulfi:hover div{opacity: 0; transform: translate(100%,0)}
+      zulfi div{
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: 800;

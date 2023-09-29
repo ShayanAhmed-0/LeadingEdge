@@ -14,105 +14,104 @@ import pic12 from '/public/images_hexa/picl.png'
 
 import '@/components/service1.css'
 import Image from 'next/image'
-import My_Btn from '@/components/ani_btn/btn'
+// import My_Btn from '@/components/ani_btn/btn'
 import Link from 'next/link'
 
 export default function page(){
 
     return(
+		
 
 <div className='bod'>    
-<Link href="/">
+{/* <Link href="/">
 <My_Btn/>    
-</Link>
-        <div className="main">	
+</Link> */}
+        <div className="main1a">	
 	
- <h1>  Unlock Your Digital Potential with Our Expertise</h1> 
-  <section>
-		<article>
-			<figure>
+ <h1 className='h1a'>  Unlock Your Digital Potential with Our Expertise</h1> 
+  <section className='section1'>
+		<article className='article1'>
+			<figure className='figure1'>
 				{/* <h2>'Creative'</h2> */}
 				<br/>
-				<p>Building Tomorrows Websites Today</p>
+				 <p className='p1a'>Building Tomorrows Websites Today</p>
 			</figure>
 			 <Image alt src={pic1}/>
-			 </article>
-		<article>
-
-
-        <figure>
+			 </article>			 
+		<article className='article1'>
+        <figure className='figure1'>
 		<br/>
-				<p>Data Optimization Expertise</p>
+				<p className='p1a'>Data Optimization Expertise</p>
 			</figure>
 			<Image alt src={pic2}/>
 		</article>
-	 <article>
-			<figure>
+	 <article className='article1'>
+			<figure className='figure1'>
 				<br/>
-			<p>System Management Excellence</p>
+			<p className='p1a'>System Management Excellence</p>
 			</figure>
 			<Image alt src={pic3}/>
 		</article>  
-		 <article>
-			<figure>
+		 <article className='article1'>
+			<figure className='figure1'>
 				<br/>
-			<p>Resolving Bugs with Expertise</p>
+			<p className='p1a'>Resolving Bugs with Expertise</p>
 			</figure>
 			<Image alt src={pic4}/>
 		</article> 
-		<article>
-			<figure>
+		<article className='article1'>
+			<figure className='figure1'>
 				<br/>
-					<p>Content Management Made Easy</p>
+					<p className='p1a'>Content Management Made Easy</p>
 			</figure>
 			<Image alt src={pic5}/>
 		</article> 
-		 <article>
-			<figure>
+		 <article className='article1'>
+			<figure className='figure1'>
 				<br/>
-				<p>Elevate Your Web Experience</p>
+				<p className='p1a'>Elevate Your Web Experience</p>
 			</figure>
 			<Image alt src={pic6}/>
 		</article>
-	 <article>
-			<figure>
+	 <article className='article1'>
+			<figure className='figure1'>
 				<br/>
-				<p>Dominate Search Rankings</p>
+				<p className='p1a'>Dominate Search Rankings</p>
 			</figure>
 			<Image alt src={pic7}/>
 		</article>
-		<article>
-			<figure>
+		<article className='article1'>
+			<figure className='figure1'>
 				<br/>
-				<p>Maximize Website Efficiency</p>
+				<p className='p1a'>Maximize Website Efficiency</p>
 			</figure> 
 			<Image alt src={pic8}/>
 		</article>
-		<article>
-			<figure>
+		<article className='article1'>
+			<figure className='figure1'>
 		<br/>
-				<p>Empower Your E-commerce</p>
+				<p className='p1a'>Empower Your E-commerce</p>
 			</figure>
 			<Image alt src={pic9}/>
 	</article>
-		<article>
-			<figure>
+		<article className='article1'>
+			<figure className='figure1'>
 			<br/>
-				<p>Your Logo, Our Artistry</p>
+				<p className='p1a'>Your Logo, Our Artistry</p>
 			</figure>
 			<Image alt src={pic10}/>
 	</article> 
-		<article>
-			<figure>
+		<article className='article1'>
+			<figure className='figure1'>
 				<br/>
-				<p>Elevate User Experiences</p>
+				<p className='p1a'>Elevate User Experiences</p>
 			</figure>
 			<Image alt src={pic11}/>
 		</article>
-		<article>
-			<figure>
+		<article className='article1'>
+			<figure className='figure1'>
 			<br/>
-				<p>Connecting Your Digital World</p>
+				<p className='p1a'>Connecting Your Digital World</p>
 			</figure>
 			<Image alt src={pic12}/>
 		</article> 

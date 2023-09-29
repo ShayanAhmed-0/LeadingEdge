@@ -23,7 +23,7 @@
 
 /* Main heading for card's front cover */
 .card-front__heading {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 2px;
   font-weight: bold;
   margin-top: 0.25rem;
@@ -32,9 +32,10 @@
 /* Main heading for inside page */
 .inside-page__heading {
   padding-bottom: 1rem;
-  font-size: 76px;
-  width: 100%;
+  font-size: 3.2rem;
+  width: 80%;
   color: black;
+  /* background-color: rgb(67, 67, 95); */
 }
 
 /* Mixed */
@@ -42,53 +43,69 @@
 /* For both inside page's main heading and 'view me' text on card front cover */
 .inside-page__heading,
 .card-front__text-view {
-  font-size: 67px;
+  font-size: 87px;
+  /* background-color: blueviolet; */
   font-weight: bold;
-  margin-top: 0.2rem;
+  margin-top: 1.2rem;
 }
 
 #h1_1{
-    font-size: 23px;
-    margin-top: -5px;
+    font-size: 43px;
+    padding-top: 90px;
+     /* background-color: plum; */
+    margin-top: -10px;
 }
 .inside-page__heading--city,
 .card-front__text-view--city {
     color: black;
     letter-spacing: 2px;
-    font-size:16px;
-    font-family: cursive;
+    font-size:20px;
+    /* font-family: cursive;
+    background-color: goldenrod; */
+    font-family: 'Times New Roman';
+    font-weight:bolder;
 }
 
 #p11{
     color: black;
     letter-spacing: 2px;
     font-size:30px;
+    /* background-color: red; */
     font-family: cursive;
 
 }
 
 .inside-page__heading--ski,
 .card-front__text-view--ski {
-    color: black;
+  color: black;
     letter-spacing: 2px;
-    font-size:16px;
-    font-family: cursive;
+    font-size:20px;
+    /* font-family: cursive;
+    background-color: goldenrod; */
+    font-family: 'Times New Roman';
+    font-weight:bolder;
 }
 
 .inside-page__heading--beach,
 .card-front__text-view--beach {
-    color: black;
-    letter-spacing: 2px;
-    font-size:26px;
-    font-family: cursive;
+  color: black;
+  letter-spacing: 2px;
+  font-size:20px;
+  /* font-family: cursive;
+  background-color: goldenrod; */
+  font-family: 'Times New Roman';
+  font-weight:bolder;
 }
 
 .inside-page__heading--camping,
 .card-front__text-view--camping {
-    color: black;
-    letter-spacing: 2px;
-    font-size:16px;
-    font-family: cursive;
+  color: black;
+  letter-spacing: 2px;
+  font-size:20px;
+  /* font-family: cursive;
+  background-color: goldenrod; */
+  font-family: 'Times New Roman';
+  font-weight:bolder;
 }
 
 /* Front cover */
@@ -117,7 +134,7 @@
 /* For inside page's body text */
 .inside-page__text {
   color: #121111;
-  font-size: 13px;
+  font-size: 16px;
   font-style: bolder;
   margin-top: 10px;
 }
@@ -777,10 +794,11 @@ h1{
           box-sizing: border-box;
         }
         .sp1{
-            font-size: 3.2vw;
+            font-size: 2.9vw;
             text-transform: uppercase;
             text-align: center;
             line-height: 10px;
+           
             font-weight: 900;
             letter-spacing: 1.3px;
             word-spacing: 1px;
@@ -870,6 +888,7 @@ h1{
             text-align: center;
             line-height: 10px;
             font-weight: 900;
+          
             letter-spacing: 1.3px;
             word-spacing: 1px;
         }
@@ -895,6 +914,7 @@ h1{
         h1{
             font-size: 7.3em;
             font-weight: normal;
+           
         }
         
         /* title styles */
@@ -1004,6 +1024,7 @@ h1{
         line-height: 10px;
         font-weight: 900;
         letter-spacing: 1.3px;
+       
         word-spacing: 1px;
         margin-top: 30px;
     }
@@ -1021,6 +1042,7 @@ h1{
     .sp1{
         font-size: 4.2vw;
         text-transform: uppercase;
+       
         text-align: center;
         line-height: 10px;
         font-weight: 900;
@@ -1042,10 +1064,12 @@ h1{
         font-size: 4.5vw;
         text-transform: uppercase;
         text-align: center;
-        line-height: 10px;
+        line-height: 10px; 
+         
         font-weight: 900;
         letter-spacing: 1.3px;
         word-spacing: 1px;
+        
         margin-top: 30px;
     }
     .home-title{
@@ -1068,9 +1092,11 @@ h1{
         font-weight: 900;
         letter-spacing: 1.3px;
         word-spacing: 1px;
-        margin-top: 30px;
+        margin-top: 30px; 
+       
     }
     .home-title{
+    
         height:70px;
         padding-top: 5px;
     }

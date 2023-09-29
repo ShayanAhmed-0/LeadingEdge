@@ -42,14 +42,14 @@ const My_Hero_Section = () => {
       // height={600}
         src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
         alt=""
-        className="absolute object-cover object-left w-full h-full sm:object-center opacity-70"
+        className="absolute object-cover object-left w-full h-full opacity-70 sm:object-center"
       />
 
       {/* :HERO MAIN CONTAINER */}
-      <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-40 md:w-2/3 lg:w-2/3">
+      <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-30 md:w-2/3 lg:w-2/3">
         {/* ::Hero title & text */}
         <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none lg">
-          <h1 className="text-xl font-extrabold font-josefin">
+          <h1 className="font-extrabold text-xxl font-josefin">
             Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
               into Deliverables:
@@ -57,7 +57,7 @@ const My_Hero_Section = () => {
               Your Work, <br />
             Our Expertise
           </h1>
-          <p className="text-lg tracking-wider text-gray-100 mt-14 font-firacode space-md">
+          <p className="text-base tracking-wider text-gray-100 mt-14 font-firacode space-md">
             Explore a world your aspirations become reality. At our freelancing platform,
             we are committed to transforming your dreams into tangible deliverables. With our
             expert freelancers by your side, your vision is only a click away from a becoming a

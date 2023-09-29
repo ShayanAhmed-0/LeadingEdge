@@ -2,10 +2,10 @@
 // import Footer from "../layout/footer/Footer";
 // import Explorecontent from "../components/Explorecontent";
 
-import Explorecontent from "@/components/explorecon/Explorecontent";
+// import Explorecontent from "@/components/explorecon/Explorecontent";
 import Footer from "@/layout/footer/Footer";
 import Navbar from "@/layout/navbar/Navbar";
-
+import Explorecontent from "@/components/explorecon/Explorecontent";
 
 
 export default function page() {
@@ -13,8 +13,8 @@ export default function page() {
   return (
     <div className="">
       <Navbar/>
-      explore
-   {/* <Explorecontent/> */}
+      {/* explore */}
+   <Explorecontent/>
    <div className="">
    <Footer/>
    </div>
