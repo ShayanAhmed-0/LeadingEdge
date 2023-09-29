@@ -86,7 +86,7 @@ const BookFlip = () => {
           </div>
         </div>
         <div className="flex items-center page">
-          <div className='text-center lg:text-xxl md:text-lg sm:text-sm mobile:text-xs line-h-10'>
+          <div className='text-center lg:text-xl md:text-lg sm:text-sm mobile:text-xs line-h-10'>
             <Typewriter
               options={{
                 strings: ['Four friends, united by web development passion, turned dreams into a thriving reality in one year, showcasing the boundless possibilities of their craft.'],

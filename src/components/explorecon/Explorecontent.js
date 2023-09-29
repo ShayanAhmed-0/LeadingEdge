@@ -190,7 +190,7 @@ const Explorecontent = () => {
 
               <div class="inside-page">
                 <div class="inside-page__container">
-                  <h3 class="inside-page__heading inside-page__heading--ski" id="h1_1">
+                  <h3 class="inside-page__heading inside-page__heading--city" id="h1_1">
                     Crazy Convertors
                   </h3>
                   <p class="inside-page__text">
@@ -264,7 +264,7 @@ const Explorecontent = () => {
 
               <div class="inside-page">
                 <div class="inside-page__container">
-                  <h3  id="p11" class="inside-page__heading inside-page__heading--beach">
+                  <h3  id="h1_1" class="inside-page__heading inside-page__heading--city">
                     CleverBot2
                   </h3>
                   <p class="inside-page__text">
@@ -336,7 +336,7 @@ const Explorecontent = () => {
 
               <div class="inside-page">
                 <div class="inside-page__container">
-                  <h3 id="h1_1" class="inside-page__heading inside-page__heading--camping">
+                  <h3 id="h1_1" class="inside-page__heading inside-page__heading--city">
                     GamesPaa
                   </h3>
                   <p class="inside-page__text">

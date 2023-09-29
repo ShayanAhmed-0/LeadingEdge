@@ -1,7 +1,6 @@
-"use client"
-import ContactusComp from '@/components/ContactusComp'
-import Explorecontent from '@/components/explorecon/Explorecontent'
-import Messenger from '@/components/Messenger'
+// import ContactusComp from '@/components/ContactusComp'
+// import Explorecontent from '@/components/explorecon/Explorecontent'
+// import Messenger from '@/components/Messenger'
 import My_Hero_Section from '@/components/My_Hero_Section'
 import Footer from '@/layout/footer/Footer'
 import Navbar from '@/layout/navbar/Navbar'

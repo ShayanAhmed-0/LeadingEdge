@@ -15,7 +15,7 @@ module.exports = {
       base: ['16px', '24px'],
       lg: ['20px', '28px'],
       xl: ['24px', '32px'],
-      xxl: ['30px', '32px']
+      xxl: ['57px', '85px']
     },
     screens: {
       'mobile' : '200px',
