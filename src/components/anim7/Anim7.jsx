@@ -11,7 +11,21 @@ export default function Anim7(){
 <div className='div_a'> 
 <ul>
 
-<h1 className='h1a'>Technologies</h1>
+<div class="container">
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+      <text textAnchor="middle" x="50%" y="80%">Technologies</text>
+    </symbol>
+
+    <g class = "g-ants">
+      <use xlinkHref="#s-text" class="text-copy"></use>
+      <use xlinkHref="#s-text" class="text-copy"></use>
+      <use xlinkHref="#s-text" class="text-copy"></use>
+      <use xlinkHref="#s-text" class="text-copy"></use>
+      <use xlinkHref="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>
 <br/>
 
     <li className='li_a' id="li_1" >
