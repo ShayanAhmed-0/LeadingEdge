@@ -141,7 +141,6 @@ function Aboutcom() {
 
   return (
     <div> 
-      <Navbar/>
     <div className="overflow-x-hidden overflow-y-hidden ">
       <section className="py-14">
         <div className="max-w-screen-xl mx-auto md:px-8">
@@ -376,7 +375,6 @@ function Aboutcom() {
         </div>
       </section>
     </div>
-<Footer/>
     </div>
   );
 }

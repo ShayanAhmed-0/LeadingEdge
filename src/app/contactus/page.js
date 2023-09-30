@@ -8,9 +8,7 @@ import Footer from '@/layout/footer/Footer'
 const page = () => {
   return (
     <div>
-      <Navbar/>
       <ContactusComp/>
-      <Footer/>
     </div>
   )
 }

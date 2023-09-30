@@ -12,7 +12,6 @@ export default function page() {
    
   return (
     <div className="">
-      <Navbar/>
       <div>
        <div className="waju"> 
     <div className="main_">
@@ -358,7 +357,6 @@ export default function page() {
 
     </div>
     </div>
-   <Footer/>
    </div>
      )
 }

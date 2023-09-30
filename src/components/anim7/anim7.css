@@ -387,7 +387,7 @@ svg {
 
 .text-copy {
     fill: none;
-    stroke: white;
+    stroke: black;
     stroke-dasharray: 6% 29%;
     stroke-width: 5px;
     stroke-dashoffset: 0%;
