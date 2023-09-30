@@ -1,9 +1,6 @@
 'use client'
 import Image from 'next/image';
 import './bookFlip.css'
-import React from 'react'
-import Navbar from '@/layout/navbar/Navbar';
-import Footer from '@/layout/footer/Footer';
 import { useEffect, useState } from 'react';
 import logo from '/public/Logo/Logos.png'
 import pic from '/public/Images/LEcover.jpg'
@@ -58,7 +55,6 @@ const BookFlip = () => {
 
   return (
 <div> 
-  <Navbar/>
   <br/>
   <br/>
   <br/>
@@ -123,7 +119,6 @@ const BookFlip = () => {
     <br/>
     <br/>
     
-    <Footer/>
     </div>
   );
 }

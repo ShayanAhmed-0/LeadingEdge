@@ -1,3 +1,5 @@
+import "@/components/explorecon/explore.css"
+
 export default function page() {
   return (
     <div className="">
