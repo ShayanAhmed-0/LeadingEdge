@@ -1,10 +1,11 @@
 import PricingCard from '@/components/PricingCard'
+import Anim7 from '@/components/anim7/anim7'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <PricingCard/>
+      <Anim7/>
     </div>
   )
 }
