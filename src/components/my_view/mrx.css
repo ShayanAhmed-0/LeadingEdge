@@ -1,3 +1,38 @@
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+/* :root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+} */
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0);
+}
+
 html {
     height:100%;
   }
@@ -28,9 +63,14 @@ html {
   }
   
   .content {
+    border: 0.35rem solid;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+    /* above is new */
    background-color:rgba(0, 0, 0, 0.669); 
     border-radius:.25em;
-    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.615) 0px 5px 15px;
     box-sizing:border-box;
     width: 700px;
     height: 450px;
@@ -41,11 +81,35 @@ html {
     top:50%;
     transform:translate(-50%, -50%);
   }
-  
-  h1 {
-    font-family:monospace;
-
+  @keyframes borderRotate {
+    100% {
+      --angle: 420deg;
+    }
   }
+  
+  @keyframes borderRadial {
+    20% {
+      --gradX: 100%;
+      --gradY: 50%;
+    }
+    40% {
+      --gradX: 100%;
+      --gradY: 100%;
+    }
+    60% {
+      --gradX: 50%;
+      --gradY: 100%;
+    }
+    80% {
+      --gradX: 0%;
+      --gradY: 50%;
+    }
+    100% {
+      --gradX: 50%;
+      --gradY: 0%;
+    }
+  }
+  
   
   @keyframes slide {
     0% {
@@ -64,7 +128,7 @@ html {
 
 
 .home-title{
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
@@ -75,11 +139,30 @@ html {
     font-family: "Audiowide", cursive;
     font-weight: 600;
 }
-.sp2{
-    margin-top: 30px;
-    font-size: 20px;
+div.mrxintro{
+  font-family:monospace;
+  transform: scale(0.94);
+  animation: scale1 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-
+@keyframes scale1 {
+  100% {
+    transform: scale(1);
+  }
+}
+.sp2{
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+    margin-top: 40px;
+    font-size: 20px;
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
   #h1a{
     font-size: 3em;
     font-weight: normal;
@@ -208,3 +291,123 @@ cursor:pointer;
 } */
 
 
+
+div.hell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+
+.mrxcontainer {
+  width: 9.25em;
+  height: 1.15em;
+  font-size: 4rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.mrxcontainer div {
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.upper {
+  font-weight: bold;
+  top: 0;
+  height: 65%;
+  color: #fff;
+  overflow: hidden;
+  z-index: 3;
+  animation: moveUp 3s ease-in-out 1;
+  background-color: black;
+}
+
+.lower {
+  font-weight: bold;
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(180deg, #121212 52.5%, #fff 52.5%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  z-index: 1;
+  animation: moveDown 3s ease-in-out 1;
+}
+
+.inside {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  text-align: center;
+  z-index: 2;
+  font-size: 1rem;
+  color: rgba(168, 239, 255, 1);
+}
+
+@keyframes moveUp {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50%,
+  70% {
+    top: -45px;
+  }
+}
+
+@keyframes moveDown {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50%,
+  70% {
+    top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    font-size: 2.4rem;
+  }
+
+  .inside {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 424px) {
+  .container {
+    font-size: 2rem;
+  }
+
+  .inside {
+    font-size: 0.75rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .container {
+    font-size: 2rem;
+  }
+
+  .inside {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 299px) {
+  .container {
+    font-size: 1.6rem;
+  }
+
+  .inside {
+    font-size: 0.6rem;
+  }
+}

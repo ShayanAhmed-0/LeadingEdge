@@ -1,4 +1,12 @@
+"use client"
+import { usePathname } from 'next/navigation';
+
 export default function Footer() {
+  const pathname = usePathname()
+
+  if (pathname === '/') {
+    return null;
+  }
   return (
     <div className="main_head">
       <div className="relative mt-16 bg-gradient-to-tr from-stone-900 to-stone-600">

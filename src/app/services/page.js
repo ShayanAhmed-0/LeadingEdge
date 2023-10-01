@@ -8,10 +8,10 @@ const page = () => {
         
     {/* <h1 className='mt-6 mb-6 shead'>Unlock Your Digital Potential with Our Expertise</h1> */}
     <h1
-          className="mt-6 mb-6 text-4xl text-center flex flex-col justify-center items-center bg-cover bg-clip-text bg-center uppercase text-transparent textsm:text-7xl font-extrabold tracking-wide antialiased"
+          className="mt-12 mb-12 text-4xl text-center flex flex-col justify-center items-center bg-cover bg-clip-text bg-center uppercase text-transparent textsm:text-7xl font-extrabold tracking-wide antialiased"
           style={{
             backgroundImage:
-              "url(https://media.giphy.com/media/7VzgMsB6FLCilwS30v/giphy.gif)",
+              "url(https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif)",
           }}>
           Unlock Your Digital Potential with Our Expertise
         </h1>

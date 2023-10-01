@@ -10,22 +10,15 @@ export default function Anim7(){
 <h1 className='h1a'>Technologies</h1> */}
 <div className='div_a'> 
 <ul>
-
-<div class="container">
-  <svg viewBox="0 0 960 300">
-    <symbol id="s-text">
-      <text textAnchor="middle" x="50%" y="80%">Technologies</text>
-    </symbol>
-
-    <g class = "g-ants">
-      <use xlinkHref="#s-text" class="text-copy"></use>
-      <use xlinkHref="#s-text" class="text-copy"></use>
-      <use xlinkHref="#s-text" class="text-copy"></use>
-      <use xlinkHref="#s-text" class="text-copy"></use>
-      <use xlinkHref="#s-text" class="text-copy"></use>
-    </g>
-  </svg>
-</div>
+{/* <h1 
+          className="mt-12 mb-12 text-4xl text-center flex flex-col justify-center items-center bg-cover bg-clip-text bg-center uppercase text-transparent textsm:text-7xl font-extrabold tracking-wide antialiased"
+          style={{
+            backgroundImage:
+              "url(https://media.giphy.com/media/7VzgMsB6FLCilwS30v/giphy.gif)",
+          }}>
+          Technologies
+        </h1> */}
+<h1 className='h1a'>Technologies</h1>
 <br/>
 
     <li className='li_a' id="li_1" >
