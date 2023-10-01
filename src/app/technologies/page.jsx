@@ -1,6 +1,4 @@
-import PricingCard from '@/components/PricingCard'
-import Anim7 from '@/components/anim7/anim7'
-import React from 'react'
+import Anim7 from '@/components/anim7/Anim7'
 
 const page = () => {
   return (

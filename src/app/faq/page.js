@@ -1,11 +1,6 @@
-import React from "react";
-import Navbar from "@/layout/navbar/Navbar";
-import Footer from "@/layout/footer/Footer";
-
 const page = () => {
   return (
     <div> 
-      <Navbar/>
     <div className="flex items-center justify-center min-h-screen">
       <section
         // style={{ background: "linear-gradient(to bottom, #685b50, #685b50);" }}
@@ -55,7 +50,6 @@ const page = () => {
         </div>
       </section>
     </div>
-<Footer/>
     </div>
   );
 };

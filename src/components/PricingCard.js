@@ -5,7 +5,6 @@ import Footer from "@/layout/footer/Footer";
 const Pricing = () => {
   return (
   <div> 
-    <Navbar/>
 <section
   class="relative z-10 overflow-hidden bg-white pt-20 pb-12 lg:pt-[70px] lg:pb-[90px]"
 >
@@ -945,7 +944,6 @@ const Pricing = () => {
     </div>
   </div>
 </section>
-<Footer/>
 </div>
   );
 };
