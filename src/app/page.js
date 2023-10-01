@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Navbar />
-      <My_Hero_Section />
+      <My_Hero_Section/>
       <Footer />
     </div>
   );
