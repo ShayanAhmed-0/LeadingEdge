@@ -119,8 +119,8 @@ export default function Navbar(){
       {/* ::MOBILE MENU */}
       { isOpen &&
         <div className="flex flex-col w-full px-3 py-4 text-base font-semibold text-center uppercase rounded-lg bg-gray-200/40 md:hidden">
-          <Link href="/" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Home</Link>
-          <Link href="/pricing" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Prices</Link>
+          <Link href="/home" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Home</Link>
+          <Link href="/technologies" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">Technologies</Link>
           <Link href="/about" className="block px-3 py-2 font-bold text-black rounded-md font-base hover:text-yellow-50 hover:bg-black/70">About</Link>
           <Link href="/contactus" className="block px-3 py-2 font-bold text-black rounded-md font-lg hover:text-yellow-50 hover:bg-black/70">Contact</Link>
           <div onClick={toggleMessenger} className="flex justify-center w-full mt-1 md:hidden sm:hidden lg:hidden">
