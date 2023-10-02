@@ -52,7 +52,7 @@ const My_Hero_Section = () => {
       <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-30 md:w-2/3 lg:w-2/3">
         {/* ::Hero title & text */}
         <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none lg">
-          <h1 className="font-extrabold text-xxl font-josefin">
+          <h1 className="font-extrabold text-xxl font-josefin big_mob:text-xl lg:text-xxl mobile:text-ml ipad:text-ml">
             Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
               into Deliverables:

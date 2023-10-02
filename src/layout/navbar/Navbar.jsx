@@ -83,7 +83,7 @@ export default function Navbar(){
       <div className="flex items-center justify-between py-4 mx-auto px-7">
         {/* ::Site logo and Name */}
         <a href="/home" className="flex items-center flex-shrink-0 font-medium text-gray-900 title-font md:mb-0">
-<Image src={logo} className='w-40 h-16 rounded-full'/>
+<Image src={logo} className='rouded-full h-14 w-44'/>
           {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 p-2 text-white rounded-full from-stone-600 to-stone-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
           </svg> */}
