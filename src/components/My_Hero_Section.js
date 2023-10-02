@@ -40,19 +40,22 @@ const My_Hero_Section = () => {
   return (
     <div className="relative flex justify-end w-full h-full overflow-hidden bg-white bg-gradient-to-t from-black via-transparent to-black">
       {/* :HERO IMAGE */}
-      <img
+       <img
       // width={800}
       // height={600}
-        src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
+      src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
+        //src="https://i.pinimg.com/736x/90/72/80/907280526f902884ceae47fffefb8289.jpg"
         alt=""
-        className="absolute object-cover object-left w-full h-full sm:object-center opacity-30"
-      />
+        className="absolute object-cover object-left w-full h-full sm:object-center opacity-90"
+      /> 
+
+
 
       {/* :HERO MAIN CONTAINER */}
       <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-30 md:w-2/3 lg:w-2/3">
         {/* ::Hero title & text */}
         <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none lg">
-          <h1 className="font-extrabold text-xxl font-josefin big_mob:text-xl lg:text-xxl mobile:text-ml ipad:text-ml">
+          <h1 className="font-extrabold text-xxl font-josefin lg:text-xxl mobile:text-ml ipad:text-ml big_mob:text-x">
             Turning Dreams, <br />
             <span className="text-yellow-400 text-opacity-80">
               into Deliverables:
@@ -80,7 +83,7 @@ const My_Hero_Section = () => {
 <Link href="/explore">
         <button className="relative inline-flex items-center w-full m-5 overflow-hidden text-2xl text-white transition-all duration-300 transform md:w-2/3 lg:w-2/5 font-firacode hover:translate-x-4">
         <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #49FC00", clipPath: "rect(24px, 550px, 90px, 0)" }} ></span>
-        <p className="mt-10 text-lg font-extrabold "> Explore </p>
+        <p className="mt-10 text-lg font-extrabold ipad:text-head"> Explore </p>
         <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#49FC00, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true"></span>
     
           <img
