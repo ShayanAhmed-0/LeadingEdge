@@ -109,7 +109,7 @@ color:#1286A8;
   /* font-family: monospace;
   /* font-size: 80px; */
   font-weight: bolder; 
-  font-size: 100pt;
+  font-size: 85pt;
   font-family: Arial, Helvetica, sans-serif;
   color: transparent;
   /* -webkit-font-smoothing: antialiased;
@@ -270,6 +270,7 @@ ul .li_a .descr {
     .h1a{
 
         font-size: 90pt;
+       
     }
 }
 
@@ -290,6 +291,7 @@ ul .li_a .descr {
     .h1a{
 
         font-size: 70pt;
+        
     }
 }
 
@@ -299,8 +301,44 @@ ul .li_a .descr {
 
     .h1a{
 
-        font-size: 60pt;
+        font-size: 50pt;
     }
+}
+
+
+
+
+@media (min-width:250px) and (max-width:443px){
+
+  .h1a{
+
+      font-size: 30pt;
+  }
+}
+
+
+
+
+
+@media (min-width:304px) and (max-width:443px){
+
+  .h1a{
+
+      font-size: 30pt;
+  }
+}
+
+  
+
+
+
+
+@media (min-width:535px) and (max-width:700px){
+
+  .h1a{
+
+      font-size: 60pt;
+  }
 }
 
 
@@ -310,15 +348,21 @@ ul .li_a .descr {
     .h1a{
 
         font-size: 50pt;
+
     }
 }
+
+
+
+
+
 
 
 @media (min-width:304px) and (max-width:403px){
 
     .h1a{
 
-        font-size: 45pt;   
+        font-size: 40pt;   
         font-family: 'Luckiest Guy';
         color: #fff;
         /* padding: 10px;
@@ -388,5 +432,91 @@ ul .li_a .descr {
                 }
                 
             
-          
+@media (min-width:693px){
 
+  #li_7{margin-top: 30px;}
+}          
+
+
+
+@media (min-width:870px){
+
+  #li_9{margin-top: 30px;}
+}      
+
+
+
+
+@media (min-width:906px){
+
+  #li_8{margin-top: 30px;}
+}    
+
+
+@media (min-width:1080px){
+
+  #li_6{
+    margin-top: 30px;}
+  #li_10{margin-top: 30px;}
+}    
+
+
+
+
+@media (min-width:903px){
+
+  #li_6{
+    margin-top: 0px;}
+  #li_10{margin-top: 0px;}
+}   
+
+
+
+
+@media (min-width:876px) and (max-width:902px){
+
+  #li_6{
+    margin-top: 0px;}
+  #li_10{
+    margin-top: 0px;
+  }
+}   
+
+
+@media (min-width:1085px){
+
+  #li_6{
+    margin-top: 30px;}
+  #li_10{
+    margin-top: 30px;
+  }
+}   
+
+
+
+
+@media (min-width:479px) and (max-width:656px){
+
+  #li_7{
+    margin-top: 30px;}
+
+}  
+
+
+
+@media (min-width:657px){
+
+  #li_7{
+    margin-top: 30px;}
+
+}  
+
+
+
+
+@media (min-width:895px) and (max-width:906px){
+
+  #li_8{
+    margin-top: 30px;}
+
+}  
