@@ -308,19 +308,40 @@ ul .li_a .descr {
 
 
 
-@media (min-width:250px) and (max-width:443px){
+@media (max-width:472px){
+
+  .h1a{
+
+      font-size: 40pt;
+  }
+}
+@media (max-width:351px){
 
   .h1a{
 
       font-size: 30pt;
   }
 }
+@media (max-width:262px){
+
+  .h1a{
+
+      font-size: 25pt;
+  }
+}
+/* @media (min-width:250px) and (max-width:443px){
+
+  .h1a{
+
+      font-size: 30pt;
+  }
+} */
 
 
 
 
 
-@media (min-width:304px) and (max-width:443px){
+/* @media (min-width:304px) and (max-width:443px){
 
   .h1a{
 
@@ -350,7 +371,7 @@ ul .li_a .descr {
         font-size: 50pt;
 
     }
-}
+} */
 
 
 
@@ -358,22 +379,22 @@ ul .li_a .descr {
 
 
 
-@media (min-width:304px) and (max-width:403px){
+/* @media (min-width:304px) and (max-width:403px){
 
     .h1a{
 
         font-size: 40pt;   
         font-family: 'Luckiest Guy';
-        color: #fff;
+        color: #fff; */
         /* padding: 10px;
         background-color: rgba(0, 0, 0, 0.527); */
-        -webkit-font-smoothing: antialiased; 
+        /* -webkit-font-smoothing: antialiased;  */
         /* -moz-osx-font-smoothing: grayscale; */
-        -moz-osx-font-smoothing:grayscale;
+        /* -moz-osx-font-smoothing:grayscale;
     
 
     }
-}
+} */
 
 
 @media (max-width:656px){

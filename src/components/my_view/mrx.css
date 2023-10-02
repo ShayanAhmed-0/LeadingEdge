@@ -256,7 +256,7 @@ div.mrxintro{
     justify-content: center;
     border: 5px solid black;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   .span1 a:before{
     color: #fff;
@@ -374,7 +374,7 @@ div.hell {
 }
 
 @media (max-width: 500px) {
-  .container {
+  .mrxcontainer {
     font-size: 2.4rem;
   }
 
@@ -383,18 +383,21 @@ div.hell {
   }
 }
 @media (max-width: 424px) {
-  .container {
+  .mrxcontainer {
     font-size: 2rem;
   }
 
   .inside {
     font-size: 0.75rem;
   }
+  .sp2{
+    font-size: 17px;
+  }
 }
 
 
 @media (max-width: 320px) {
-  .container {
+  .mrxcontainer {
     font-size: 2rem;
   }
 
@@ -403,7 +406,7 @@ div.hell {
   }
 }
 @media (max-width: 299px) {
-  .container {
+  .mrxcontainer {
     font-size: 1.6rem;
   }
 
