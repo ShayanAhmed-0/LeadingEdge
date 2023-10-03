@@ -198,7 +198,7 @@ ul li .sdescr::before {
 .sl1{
   /* --accent-color:#41516C; */
   --accent-color:#41516C;
-  color: #41516C;
+  color: #8b9ab4;
   
 }
 .sl2{
@@ -213,7 +213,7 @@ color: #ffbb00;
 
     .sl4{
         --accent-color:#1B5F8C;
-        color: #1B5F8C;
+        color: #4b95c6;
         }
 
 
@@ -224,7 +224,7 @@ color: #ffbb00;
 .sl6{
   /* --accent-color:#41516C; */
   --accent-color:#08363a;
-  color: #08363a;
+  color: #3ca1ab;
   
 }
 .sl7{

@@ -8,7 +8,7 @@ const page = () => {
         
     {/* <h1 className='mt-6 mb-6 shead'>Unlock Your Digital Potential with Our Expertise</h1> */}
     <h1
-          className="mt-12 mb-12 text-4xl text-center flex flex-col justify-center items-center bg-cover bg-clip-text bg-center uppercase text-transparent textsm:text-7xl font-extrabold tracking-wide antialiased"
+          className="flex flex-col items-center justify-center mt-12 mb-12 text-4xl antialiased font-extrabold tracking-wide text-center text-transparent uppercase bg-center bg-cover bg-clip-text textsm:text-7xl"
           style={{
             backgroundImage:
               "url(https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif)",
