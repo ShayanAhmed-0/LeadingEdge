@@ -5,12 +5,12 @@ const page = () => {
   return (
     <div> 
       <Navbar/>
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen lg:-my-10">
       <section
         // style={{ background: "linear-gradient(to bottom, #685b50, #685b50);" }}
-        class="w-4/6 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-stone-500 to-stone-800 rounded-t-lg shadow-xl text-black ">
+        class="w-4/6 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-stone-500 to-stone-800 rounded-t-lg shadow-lg shadow-black/75 text-black ">
         <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <h2 class="text-xl text-center font-bold sm:text-4xl lg:text-3xl text-white mt-4 ">
+          <h2 class="text-xl text-center font-bold sm:text-4xl lg:text-3xl bg-gradient-to-tr from-gray-700 via-black/80 to-gray-700 bg-clip-text text-transparent mt-4 ">
             Know Everything About us !!
           </h2>
           {/* <p class="mt-14 mb-8 text-white text-center">
@@ -18,7 +18,7 @@ const page = () => {
             Guide to Software Solutions and Beyond
           </p> */}
           <div class="space-y-6">
-            <details class="w-full border-4 border-black/40 rounded-lg mt-12">
+            <details class="w-full border-4 bg-gradient-to-tr from-gray-700 via-black/80 to-gray-700 bg-clip-border border-transparent rounded-lg mt-12">
               <summary class="ml-11 font-semibold px-4 py-6 focus:outline-none focus-visible:ri hover:cursor-pointer text-slate-100">
                 What services does your software company provide?
               </summary>
@@ -29,7 +29,7 @@ const page = () => {
                 comprehensive software solutions tailored to your needs.{" "}
               </p>
             </details>
-            <details class="w-full border-4 border-black/40 rounded-lg">
+            <details class="w-full border-4 bg-gradient-to-tr from-gray-700 via-black/80 to-gray-700 bg-clip-border border-transparent rounded-lg">
               <summary class="ml-10 text-slate-100 hover:cursor-pointer px-4 py-6 focus:outline-none focus-visible:ri font-semibold">
                 Do you offer both web and mobile app development services?
               </summary>
@@ -39,7 +39,7 @@ const page = () => {
                 applications and native or cross-platform mobile apps.{" "}
               </p>
             </details>
-            <details class=" w-full border-4 border-black/40 rounded-lg">
+            <details class=" w-full border-4 bg-gradient-to-tr from-gray-700 via-black/80 to-gray-700 bg-clip-border border-transparent rounded-lg">
               <summary class="ml-10 text-slate-100 hover:cursor-pointer px-4 py-6 focus:outline-none focus-visible:ri font-semibold">
                 How can my business benefit from your software solutions?
               </summary>
