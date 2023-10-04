@@ -41,16 +41,28 @@ const My_Hero_Section = () => {
 
     <div className="">
       <div className="relative flex justify-end w-full h-full overflow-hidden bg-white bg-gradient-to-t from-black via-transparent to-black">
-        {/* :HERO IMAGE */}
-        <img
+        {/* :HERO VIDEO */}
+        {/* <img
           // width={800}
           // height={600}
           src="https://cdn.staticcrate.com/stock-hd/effects/footagecrate-low-poly-background-black-wall-prev-full.png"
           //src="https://i.pinimg.com/736x/90/72/80/907280526f902884ceae47fffefb8289.jpg"
           alt=""
           className="absolute object-cover object-left w-full h-full opacity-90 sm:object-center"
-        />
-
+        /> */}
+<video
+    className="absolute object-cover object-left w-full h-full sm:object-center"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source
+      className="video__media"
+      src="/dark.mp4"
+      type="video/mp4"
+    />
+  </video>
 
 
         {/* :HERO MAIN CONTAINER */}

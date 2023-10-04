@@ -1,9 +1,12 @@
 import "@/components/explorecon/explore.css"
+import Footer from "@/layout/footer/Footer";
+import Navbar from "@/layout/navbar/Navbar";
 
 export default function page() {
   return (
-    <div className="">
-      <div>
+    <div>
+      <Navbar/>
+      <div className="mt-2">
         <div className="waju">
           <div className="main_">
             <br />
@@ -436,6 +439,7 @@ export default function page() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

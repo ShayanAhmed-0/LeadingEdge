@@ -22,6 +22,7 @@
 } */
 
 h1.shead {
+  text-shadow: 8px 12px 2px rgba(168, 239, 255, 1);
   text-align: center;
   font-size: xx-large;
   font-weight: 900;
