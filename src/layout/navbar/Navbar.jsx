@@ -92,13 +92,13 @@ export default function Navbar(){
         <nav className="flex-wrap items-center justify-center hidden text-base tracking-wide md:flex">
         <Link href="/home" ><button id="bt1" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
 
-          Home</button></Link>
+          HOME</button></Link>
           <Link href="/technologies"><button id="bt2" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
-          Technologies</button></Link>
+          TECHNOLOGIES</button></Link>
           <Link href="/about" ><button id="bt3" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
-          About</button></Link>
+          ABOUT</button></Link>
           <Link href="/contactus"><button id="bt4" className="group relative px-5 py-2.5 flex justify-center outline-none border-none rounded bg-transparent font-bold font-lg hover:text-black hover:text-xl hover:font-extrabold text-base text-white tracking-wide transition duration-500 transform hover:-translate-y-1 active:top-0.5">
-          Contact
+          CONTACT
           </button></Link>
         </nav>
         {/* ::Avatar */}

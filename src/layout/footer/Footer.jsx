@@ -238,7 +238,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center mt-4 space-x-4 sm:mt-0">
               <a
-                href="/"
+                href="https://www.facebook.com/profile.php?id=61551880342722" target='_blank'
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -246,7 +246,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com/leadingedgeltd/" target='_blank'
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -255,7 +255,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.facebook.com/profile.php?id=61551880342722" target="_blank"
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">

@@ -541,3 +541,11 @@ ul .li_a .descr {
     margin-top: 30px;}
 
 }  
+
+
+@media (max-width:448px) {
+#li_1{
+  margin-left: -12px;
+}
+ 
+}  
