@@ -10,9 +10,18 @@ const page = () => {
         // style={{ background: "linear-gradient(to bottom, #685b50, #685b50);" }}
         class="w-4/6 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-stone-500 to-stone-800 rounded-t-lg shadow-lg shadow-black/75 text-black ">
         <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-          <h2 class="text-xl text-center font-bold sm:text-4xl lg:text-3xl bg-gradient-to-tr from-gray-700 via-black/80 to-gray-700 bg-clip-text text-transparent mt-4 ">
+          {/* <h2 class="text-xl text-center font-bold sm:text-4xl lg:text-3xl bg-gradient-to-tr from-gray-700 via-black/80 to-gray-700 bg-clip-text text-transparent mt-4 ">
             Know Everything About us !!
-          </h2>
+          </h2> */}
+
+<h1
+          id="h1z" className="flex flex-col items-center justify-center mt-12 mb-12 antialiased font-extrabold tracking-wide text-center text-transparent uppercase bg-center bg-cover text-ml bg-clip-text textsm:text-7xl shead"
+          style={{
+            backgroundImage:
+              "url(https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif)",
+          }}>
+           Know More About Us !!
+        </h1>
           {/* <p class="mt-14 mb-8 text-white text-center">
             <strong>Unleash the Power of Technology:</strong> Your Comprehensive
             Guide to Software Solutions and Beyond

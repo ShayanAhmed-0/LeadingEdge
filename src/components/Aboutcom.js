@@ -84,7 +84,7 @@ function Aboutcom() {
         "https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       name: "Shayan Ahmed",
       title: "Mern Stack Developer",
-      desc: "Meet the backbone of our web development prowess: Shayan Ahmed, our Senior Web Developer, turning ideas into digital excellence",
+      desc: "Meet the backbone of our web development prowess: Shayan Ahmed, our Senior Web Developer, turning ideas into digital excellence.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -94,7 +94,7 @@ function Aboutcom() {
         "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
       name: "M. Haris Nadeem",
       title: "Software engineer",
-      desc: "Introducing Haris Nadeem, our Software Engineer extraordinaire, crafting innovation one line of code at a time",
+      desc: "Introducing Haris Nadeem, our Software Engineer extraordinaire, crafting innovation one line of code at a time.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -114,7 +114,7 @@ function Aboutcom() {
         "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
       name: "Wajid Ahmed",
       title: "Backend Developer",
-      desc: "Say hello to Wajid Ahmed, our Backend Developer, architecting the digital backbone of excellence",
+      desc: "Say hello to Wajid Ahmed, our Backend Developer, architecting the digital backbone of excellence.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -124,7 +124,7 @@ function Aboutcom() {
         "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       name: "Azlan",
       title: "Marketing Manager",
-      desc: "Meet Azlan, our Marketing Maestro, shaping our digital presence and amplifying our reach",
+      desc: "Meet Azlan, our Marketing Maestro, shaping our digital presence and amplifying our reach.",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
       github: "javascript:void(0)",
@@ -158,7 +158,7 @@ function Aboutcom() {
                   Our Services
                 </p>
                 <p className="mt-3 text-white/70">
-                  Welcome to Leading Edge Web Development Collective, our corner of the digital universe! We are a passionate collective of freelancers, united by our unwavering love for all things web development.
+                  Welcome to Leading Edge Web Development Collective, our corner of the digital universe! 
                 </p>
                 <a
                   onClick={openModal}
@@ -289,13 +289,13 @@ function Aboutcom() {
                       />
                     </div>
                     <div className="mt-4 sm:mt-0">
-                      <h4 className="text-lg font-semibold text-white">
+                      <h4 className="font-semibold text-white text-h_1">
                         {item.name}
                       </h4>
-                      <p className="text-cyan-300">{item.title}</p>
+                      <p className="mt-2 text-cyan-300">{item.title}</p>
                       <p className="mt-8 text-white/70">{item.desc}</p>
                       <div className="flex gap-4 mt-3 text-gray-400">
-                        <a href={item.twitter}>
+                        {/* <a href={item.twitter}>
                           <svg
                             className="w-5 h-5 duration-150 hover:text-gray-500"
                             fill="currentColor"
@@ -350,7 +350,7 @@ function Aboutcom() {
                               </clipPath>
                             </defs>
                           </svg>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </li>

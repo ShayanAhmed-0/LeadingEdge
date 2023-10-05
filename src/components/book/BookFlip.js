@@ -16,7 +16,7 @@ const BookFlip = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTyping(false);
-    }, 5000); // Set the duration for typing
+    }, 1000); // Set the duration for typing
 
     return () => clearTimeout(timer);
   }, []);

@@ -69,7 +69,7 @@ const My_Hero_Section = () => {
         <div className="relative flex flex-col justify-center w-full h-full py-28 xl:py-30 md:w-2/3 lg:w-2/3">
           {/* ::Hero title & text */}
           <div className="p-8 mx-5 text-white bg-black shadow-2xl bg-opacity-70 md:mx-0 rounded-xl md:rounded-r-none lg">
-            <h1 className="font-extrabold text-xxl font-josefin lg:text-xxl mobile:text-ml ipad:text-ml big_mob:text-x">
+            <h1 className="text-2xl font-extrabold font-josefin lg:text-xxl big_mob1:text-x small_mob1:text-h_1 r1:text-xl">
               Turning Dreams, <br />
               <span className="text-yellow-400 text-opacity-80">
                 into Deliverables:
@@ -78,9 +78,8 @@ const My_Hero_Section = () => {
               Our Expertise
             </h1>
             <p className="text-base tracking-wider text-gray-100 mt-14 font-firacode space-md">
-              Explore a world your aspirations become reality. At our freelancing platform,
-              we are committed to transforming your dreams into tangible deliverables. With our
-              expert freelancers by your side, your vision is only a click away from a becoming a
+              Explore a world your aspirations become reality.  We are committed to transforming your dreams into tangible deliverables. With our
+              expert developers by your side, your vision is only a click away from a becoming a
               successful reality.
             </p>
           </div>
@@ -110,10 +109,10 @@ const My_Hero_Section = () => {
 
 
           {/* ::Social media */}
-          <div className="absolute bottom-auto inline-flex items-center justify-around text-yellow-400 transform -translate-x-1/2 top-4 sm:top-auto sm:bottom-20 md:bottom-0 -right-16 md:right-0 h-36 md:flex-col">
+         <div className="absolute bottom-auto inline-flex items-center justify-around text-yellow-400 transform -translate-x-1/2 top-4 sm:top-auto sm:bottom-20 md:bottom-0 -right-16 md:right-0 h-36 md:flex-col">
             {/* Twitter */}
             <a href="#link" className="mx-3 transform hover:scale-110">
-              <svg
+              {/* <svg
                 className="w-7 h-7"
                 fill="currentColor"
                 role="img"
@@ -121,11 +120,11 @@ const My_Hero_Section = () => {
                 viewBox="0 0 24 24"
               >
                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-              </svg>
+              </svg> */}
             </a>
             {/* Linkedin */}
             <a href="#link" className="mx-3 transform hover:scale-110">
-              <svg
+              {/* <svg
                 className="w-7 h-7"
                 fill="currentColor"
                 role="img"
@@ -133,11 +132,11 @@ const My_Hero_Section = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
+              </svg> */}
             </a>
             {/* Google + */}
             <a href="#link" className="mx-3 transform hover:scale-110">
-              <svg
+              {/* <svg
                 className="w-7 h-7"
                 fill="currentColor"
                 enableBackground="new 0 0 24 24"
@@ -148,7 +147,7 @@ const My_Hero_Section = () => {
               >
                 <path d="m21.823 9h-2.187v2.177h-2.177v2.187h2.177v2.177h2.187v-2.177h2.177v-2.187h-2.177z" />
                 <path d="m7.5 19.5c4.328 0 7.203-3.038 7.203-7.326 0-.491-.051-.87-.122-1.248h-7.08v2.578h4.257c-.174 1.095-1.289 3.233-4.257 3.233-2.557 0-4.645-2.118-4.645-4.737s2.087-4.738 4.645-4.738c1.463 0 2.435.624 2.988 1.156l2.036-1.954c-1.311-1.227-2.999-1.964-5.025-1.964-4.144 0-7.5 3.356-7.5 7.5s3.356 7.5 7.5 7.5z" />
-              </svg>
+              </svg> */}
             </a>
           </div>
         </div>

@@ -29,13 +29,13 @@ const submitButton=async(e)=>{
           <div className="flex flex-wrap -mx-4 lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 lg:mt-32 max-w-[570px] lg:mb-0">
-                {/* <span className="block mb-4 text-white font-bold">
+                {/* <span className="block mb-4 font-bold text-white">
                We are at your Service  😊😊 !!
                 </span> */}
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-cyan-300 sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <h1  className="font-bold leading-relaxed bg-gradient-to-br from-cyan-100 via-yellow-100 to-cyan-100 bg-clip-text text-transparent mb-9">
+                <h1  className="font-bold leading-relaxed text-transparent bg-gradient-to-br from-cyan-100 via-yellow-100 to-cyan-100 bg-clip-text mb-9">
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
@@ -73,7 +73,7 @@ const submitButton=async(e)=>{
                      Email Address
                     </h4>
                     <p className="text-gray-300 text-body-color">
-                     leadingeedge@gmail.com
+                    azlan.leadingedge@gmail.com
                     </p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const submitButton=async(e)=>{
           placeholder="Your Message"
           value={message}
           onChange={e=>setMessage(e.target.value)}
-          className="w-full py-3 text-black/80 text-center border-4 border-transparent rounded-full outline-none resize-none focus:border-black/80 bg-slate-200/90 text-body-color focus:border-primary focus-visible:shadow-none placeholder:text-gray-500 placeholder:text-center px-9"
+          className="w-full py-3 text-center border-4 border-transparent rounded-full outline-none resize-none text-black/80 focus:border-black/80 bg-slate-200/90 text-body-color focus:border-primary focus-visible:shadow-none placeholder:text-gray-500 placeholder:text-center px-9"
          
         />
       </div>
@@ -1017,7 +1017,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full py-3 text-gray-400 text-center border-4 border-transparent rounded-full outline-none resize-none focus:border-black/80 bg-slate-200/90 text-body-color focus:border-primary focus-visible:shadow-none placeholder:text-gray-500 placeholder:text-center px-9"
+          className="w-full py-3 text-center text-gray-400 border-4 border-transparent rounded-full outline-none resize-none focus:border-black/80 bg-slate-200/90 text-body-color focus:border-primary focus-visible:shadow-none placeholder:text-gray-500 placeholder:text-center px-9"
           defaultValue={defaultValue}
         />
       </div>
