@@ -61,6 +61,7 @@ const My_Hero_Section = () => {
       className="video__media"
       src="/dark.mp4"
       type="video/mp4"
+      
     />
   </video>
 

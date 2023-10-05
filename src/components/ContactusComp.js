@@ -70,7 +70,7 @@ const submitButton=async(e)=>{
                   </div>
                   <div className="w-full ">
                     <h4 className="mb-1 text-xl font-bold text-white">
-                     Emails Address
+                     Email Address
                     </h4>
                     <p className="text-gray-300 text-body-color">
                     azlan.leadingedge@gmail.com

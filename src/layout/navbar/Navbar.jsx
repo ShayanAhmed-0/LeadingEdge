@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 // import logo from '/public/Logo/2-modified.png'
 import logo from '../../../public/Logo/2-modified.png'
+
 // import logo_main from '/public/images_hexa/2-modified.png'
 import { usePathname } from 'next/navigation';
 import Messenger from '@/components/Messenger'
