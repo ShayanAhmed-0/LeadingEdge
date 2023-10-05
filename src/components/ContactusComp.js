@@ -33,7 +33,7 @@ const submitButton=async(e)=>{
                We are at your Service  😊😊 !!
                 </span> */}
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-cyan-300 sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                  GET IN TOUCH WITH US 
+                  GET IN TOUCH WITH US
                 </h2>
                 <h1  className="font-bold leading-relaxed text-transparent bg-gradient-to-br from-cyan-100 via-yellow-100 to-cyan-100 bg-clip-text mb-9">
                 <Typewriter
@@ -70,7 +70,7 @@ const submitButton=async(e)=>{
                   </div>
                   <div className="w-full ">
                     <h4 className="mb-1 text-xl font-bold text-white">
-                     Email Address
+                     Emails Address
                     </h4>
                     <p className="text-gray-300 text-body-color">
                     azlan.leadingedge@gmail.com
