@@ -7,7 +7,7 @@ import { useState, Fragment, useEffect } from "react";
 // import ScrollReveal from "scrollreveal";
 import pic1 from "../../public/Avatars/Shayan.jpg"
 import pic2 from "../../public/Avatars/haris.jpg"
-import pic3 from "../../public/Avatars/Billo.jpeg"
+import pic3 from "../../public/Avatars/Billo.jpg"
 import pic4 from "../../public/Avatars/wajid.jpg"
 import pic5 from "../../public/Avatars/azlan.jpg"
 
@@ -284,12 +284,12 @@ function Aboutcom() {
               <ul className="grid gap-8 hello lg:grid-cols-2">
                 {team.map((item, idx) => (
                   <li key={idx} className="gap-8 sm:flex">
-                    <div className="w-3/5 h-50 border-black border-2">
+                    <div className="w-3/5 h-50">
                       <Image
                       width={400}
                       height={400}
                         src={item.avatar}
-                        className="object-contain  object-center w-full h-full shadow-md rounded-xl"
+                        className="object-cover object-center w-full h-full shadow-md rounded-xl"
                         alt=""
                       />
                     </div>
