@@ -5,6 +5,11 @@ import Footer from "@/layout/footer/Footer";
 import { Dialog, Transition } from "@headlessui/react";
 import { useState, Fragment, useEffect } from "react";
 // import ScrollReveal from "scrollreveal";
+import pic1 from "../../public/Avatars/Shayan.jpg"
+import pic2 from "../../public/Avatars/haris.jpg"
+import pic3 from "../../public/Avatars/Billo.jpeg"
+import pic4 from "../../public/Avatars/wajid.jpg"
+import pic5 from "../../public/Avatars/azlan.jpg"
 
 // const revealConfig = {
 //   origin: "left",
@@ -81,8 +86,9 @@ function Aboutcom() {
   const team = [
     {
       avatar:
-        "https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Shayan Ahmed",
+     //   "https://images.unsplash.com/photo-1615109398623-88346a601842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+    pic1, 
+     name: "Shayan Ahmed",
       title: "Mern Stack Developer",
       desc: "Meet the backbone of our web development prowess: Shayan Ahmed, our Senior Web Developer, turning ideas into digital excellence.",
       linkedin: "javascript:void(0)",
@@ -90,8 +96,8 @@ function Aboutcom() {
       github: "javascript:void(0)",
     },
     {
-      avatar:
-        "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
+      avatar: pic2,
+        // "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
       name: "M. Haris Nadeem",
       title: "Software engineer",
       desc: "Introducing Haris Nadeem, our Software Engineer extraordinaire, crafting innovation one line of code at a time.",
@@ -100,8 +106,8 @@ function Aboutcom() {
       github: "javascript:void(0)",
     },
     {
-      avatar:
-        "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      avatar:pic3,
+        // "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       name: "Bilal Hashmi",
       title: "Frontend designer",
       desc: "Meet Bilal Hashmi, our Front-End Developer, shaping stunning user experiences, pixel by pixel.",
@@ -110,8 +116,8 @@ function Aboutcom() {
       github: "javascript:void(0)",
     },
     {
-      avatar:
-        "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+      avatar:pic4,
+        // "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
       name: "Wajid Ahmed",
       title: "Backend Developer",
       desc: "Say hello to Wajid Ahmed, our Backend Developer, architecting the digital backbone of excellence.",
@@ -120,8 +126,8 @@ function Aboutcom() {
       github: "javascript:void(0)",
     },
     {
-      avatar:
-        "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+      avatar:pic5,
+        // "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fG1hbnxlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       name: "Azlan",
       title: "Marketing Manager",
       desc: "Meet Azlan, our Marketing Maestro, shaping our digital presence and amplifying our reach.",
@@ -140,6 +146,7 @@ function Aboutcom() {
   }
 
   return (
+    // <Image src={team[0].avatar}/>
     <div>
       <div className="overflow-x-hidden overflow-y-hidden ">
         <section className="py-14">
@@ -244,10 +251,6 @@ function Aboutcom() {
                 At Leading Edge Web Development Collective, our unwavering commitment is to ensure that every interaction with us leaves our customers not just satisfied, but absolutely delighted. We thrive on going above and beyond, constantly pushing the boundaries of excellence to make your experience with us a truly exceptional one. Your happiness is our driving force, and we take immense pride in delivering web development solutions that not only meet your expectations but surpass them. Join us on a journey where satisfaction is not enough – we are here to make you genuinely happy.
 
 
-
-
-
-
               </p>
             </div>
             <div className="mt-12 lg:mt-0">
@@ -281,10 +284,12 @@ function Aboutcom() {
               <ul className="grid gap-8 hello lg:grid-cols-2">
                 {team.map((item, idx) => (
                   <li key={idx} className="gap-8 sm:flex">
-                    <div className="w-full h-60">
-                      <img
+                    <div className="w-3/5 h-50 border-black border-2">
+                      <Image
+                      width={400}
+                      height={400}
                         src={item.avatar}
-                        className="object-cover object-center w-full h-full shadow-md rounded-xl"
+                        className="object-contain  object-center w-full h-full shadow-md rounded-xl"
                         alt=""
                       />
                     </div>
