@@ -6,7 +6,7 @@ import Footer from '@/layout/footer/Footer'
 
 const page = () => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black/90'>
       <Navbar/>
         <My_Hero_Section/>
         <Footer/>
