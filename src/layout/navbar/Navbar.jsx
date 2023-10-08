@@ -4,7 +4,7 @@ import My_Animated_Btn from '../../components/My_Animated_Btn'
 import Link from 'next/link'
 import Image from 'next/image'
 // import logo from '/public/Logo/2-modified.png'
-import logo from '../../../public/Logo/2-modified.png'
+import logo from '../../../public/Logo/logos6.png'
 
 // import logo_main from '/public/images_hexa/2-modified.png'
 import { usePathname } from 'next/navigation';
@@ -83,10 +83,10 @@ export default function Navbar(){
     <header className="w-full mb-4 text-white border-none rounded-lg shadow-lg shadow-black/75 lg:w-4/5 bg-gradient-to-tr from-stone-900 to-stone-600 body-font">
 
       {/* :DESKTOP MENU */}
-      <div className="flex items-center justify-between py-4 mx-auto px-7">
+      <div className="flex items-center justify-between py-1 mx-auto px-7">
         {/* ::Site logo and Name */}
         <a href="/home" className="flex items-center flex-shrink-0 font-medium text-gray-900 title-font md:mb-0">
-<Image src={logo} className='w-16 h-16 rouded-full'/>
+<Image src={logo} className='w-24 h-24 rouded-full'/>
           {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 p-2 text-white rounded-full from-stone-600 to-stone-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
           </svg> */}
